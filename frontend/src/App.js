@@ -19,7 +19,8 @@ function App() {
 		<BrowserRouter>
 		<div className="container-fluid">
             <header className="row bag align-items-center"><Header></Header> </header>
-				<MenuTop></MenuTop>
+				<div className="row align-items-center"><MenuTop></MenuTop></div>
+				
 				{/* <Filter></Filter> */}
             <Routes>
                <Route path="/product/:slug/:id" element={<ProductCard />} />

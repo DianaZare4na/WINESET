@@ -1,5 +1,6 @@
 import "./OurContactMenu.css";
 import arr from "./img/arr.png";
+import phone from "./img/phone.png";
 function OurContactMenu() {
 
 
@@ -7,6 +8,7 @@ function OurContactMenu() {
 
 	return (
 		<>
+		<div className="phone"><img src={phone} data-toggle="modal" data-target="#exampleModal"/></div>
 		<div className="divamy">
 			<a href="#" className="my" data-toggle="modal" data-target="#exampleModal">Связаться с нами <img src={arr}/></a>
 		</div>
