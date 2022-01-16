@@ -1,0 +1,22 @@
+.slick-slider{}
+.slick-list{
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+}
+.slick-slide.slick-active{}
+.slick-slide.slick-current{}
+.slick-slide{
+	overflow: hidden;
+	margin-right: 5px;
+}
+.flex-slider{
+	min-width: 0px;
+}
+.slick-next{
+	display: none !important;  
+}
+.slick-prev{
+	display: none !important;
+}

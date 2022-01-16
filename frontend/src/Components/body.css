@@ -1,0 +1,38 @@
+/* html { overflow-x: hidden; } */
+body{
+	font-family: "inter";
+}
+.container-fluid{
+	max-width: 1920px;
+	padding-left: 0;
+	padding-right: 0;
+}
+ul{
+	list-style-type: none;
+}
+header{
+	position: relative;
+}
+button.btn{
+	background: linear-gradient(#7A0000, #990000);
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+}
+/* .logo{
+	width: 229px;
+	height: 34px;
+} */
+.navbar-dark .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	color: red;
+}
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+input:focus {
+	outline: none; 
+}
