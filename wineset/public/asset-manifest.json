@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e9452a86.chunk.css",
+    "main.js": "/static/js/main.6e5c3ef1.chunk.js",
+    "main.js.map": "/static/js/main.6e5c3ef1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ed1497f7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ed1497f7.js.map",
+    "static/css/2.165ff965.chunk.css": "/static/css/2.165ff965.chunk.css",
+    "static/js/2.2c2d28e3.chunk.js": "/static/js/2.2c2d28e3.chunk.js",
+    "static/js/2.2c2d28e3.chunk.js.map": "/static/js/2.2c2d28e3.chunk.js.map",
+    "static/js/3.38036a68.chunk.js": "/static/js/3.38036a68.chunk.js",
+    "static/js/3.38036a68.chunk.js.map": "/static/js/3.38036a68.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.165ff965.chunk.css.map": "/static/css/2.165ff965.chunk.css.map",
+    "static/css/main.e9452a86.chunk.css.map": "/static/css/main.e9452a86.chunk.css.map",
+    "static/js/2.2c2d28e3.chunk.js.LICENSE.txt": "/static/js/2.2c2d28e3.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/static/media/Inter-Regular.23917250.ttf",
+    "static/media/aboutShop.ad308a70.png": "/static/media/aboutShop.ad308a70.png",
+    "static/media/aboutSome.78c90405.png": "/static/media/aboutSome.78c90405.png",
+    "static/media/bascetofdelicacies.5c8c60cd.png": "/static/media/bascetofdelicacies.5c8c60cd.png",
+    "static/media/homeStyle.css": "/static/media/wineleft.13cb783b.png",
+    "static/media/frenchwine.84ac6ee2.png": "/static/media/frenchwine.84ac6ee2.png",
+    "static/media/glasSlider.998d36f6.png": "/static/media/glasSlider.998d36f6.png",
+    "static/media/hend.0e7775b8.png": "/static/media/hend.0e7775b8.png",
+    "static/media/manWithGlass.56a3dd53.png": "/static/media/manWithGlass.56a3dd53.png",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/sliderF.bc959ba9.png": "/static/media/sliderF.bc959ba9.png",
+    "static/media/sliderS.795b1dd7.png": "/static/media/sliderS.795b1dd7.png",
+    "static/media/tenutaargentiera.2f933774.png": "/static/media/tenutaargentiera.2f933774.png",
+    "static/media/winGlass.5991210a.png": "/static/media/winGlass.5991210a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed1497f7.js",
+    "static/css/2.165ff965.chunk.css",
+    "static/js/2.2c2d28e3.chunk.js",
+    "static/css/main.e9452a86.chunk.css",
+    "static/js/main.6e5c3ef1.chunk.js"
+  ]
+}

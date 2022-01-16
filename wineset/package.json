@@ -1,0 +1,22 @@
+{
+  "name": "wineset",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.4",
+    "cross-fetch": "^3.1.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.2.1",
+    "mime-types": "^2.1.32",
+    "mongoose": "^6.0.4",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.3",
+    "path": "^0.12.7"
+  }
+}
