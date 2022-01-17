@@ -60,6 +60,9 @@ div.arr-white-div{
 .after-slider-col div{
 	overflow: hidden;
 }
+.after-slider-col{
+
+}
 .after-slider-col div:hover div.imgafterslider img.img-bigger{
 	transform: scale(1.3);
 	transition: .5s;
@@ -90,7 +93,7 @@ h4{
 .p-main{
 	margin-top: 92%;
 	margin-bottom: 65%;
-	font-size: 16px;
+	font-size: .85vw;
 }
 .p-main-2{
 	margin-top: 58%;
@@ -120,7 +123,7 @@ h4{
 }
 .p-article{
 	margin-top: 75.8%;
-	font-size: 16px;
+	font-size: .835vw;
 }
 .a-delivery{
 	color: #7A0000;
@@ -142,7 +145,7 @@ h4{
 }
 .iframe{
 	width:100%;
-	height: 400px; 
+	height: 571px; 
 	border: none;
 }
 .telegramm-section{
@@ -202,4 +205,9 @@ div.telegramm-form-div-div textarea{
 div.telegramm-form-div-div button{
 	width: 50%;
 	margin-left: 25%;
+}
+@media (max-width: 767.98px) {
+	.imgafterslider{
+		max-height: 150px;
+	}
 }

@@ -3,22 +3,24 @@ import "slick-carousel/slick/slick-theme.css";
 import "./sliderSlick.css";
 import React from "react";
 import Slider from "react-slick";
-import sliderF from "./img/sliderF.png";
-import sliderS from "./img/sliderS.png";
+import sliderF from "./img/gifts1.png";
+import sliderS from "./img/gifts2.png";
+import slidert from "./img/gifts3.png";
 
-export default function SimpleSlider() {
+export default function SimpleSliderGifts() {
 	const settings = {
 		arrows: false,
 		dots: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		autoplay: true,
-      speed: 1500,
-      autoplaySpeed: 1500,
+      speed: 2500,
+      autoplaySpeed: 2500,
 		centerMode: true,
-		centerPadding: "-80px",
+		centerPadding: "-60px",
+  		focusOnSelect: true,
 		responsive: [
 			{
 			  breakpoint: 1024,
@@ -50,28 +52,28 @@ export default function SimpleSlider() {
 	return (
 			<Slider  className="col-11 offset-1 flex-slider article-simple-slider" {...settings}>
 			<div>
-				<img src={sliderF}/>
-				<h3>Свадебным агенствам</h3>
+				<div><img src={sliderF}/></div>
+				<h3></h3>
 			</div>
 			<div>
-				<img src={sliderS}/>
-				<h3>Свадебным агенствам</h3>
+			<div><img src={sliderS}/></div>
+				<h3></h3>
 			</div>
 			<div>
-				<img src={sliderF}/>
-				<h3>Свадебным агенствам</h3>
+			<div><img src={slidert}/></div>
+				<h3></h3>
 			</div>
 			<div>
-				<img src={sliderS}/>
-				<h3>Свадебным агенствам</h3>
+			<div><img src={sliderF}/></div>
+				<h3></h3>
 			</div>
 			<div>
-				<img src={sliderF}/>
-				<h3>Свадебным агенствам</h3>
+			<div><img src={sliderS}/></div>
+				<h3></h3>
 			</div>
 			<div>
-				<img src={sliderS}/>
-				<h3>Свадебным агенствам</h3>
+			<div><img src={slidert}/></div>
+				<h3></h3>
 			</div>
 		</Slider>
 	);

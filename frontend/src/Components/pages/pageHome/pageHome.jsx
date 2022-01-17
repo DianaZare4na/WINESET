@@ -14,6 +14,7 @@ import manGlass from "./img/manWithGlass.png";
 import aboutSome from "./img/aboutSome.png";
 import aboutShop from "./img/aboutShop.png";
 import SimpleSlider from "./sliderSlick";
+import SimpleSliderGifts from "./sliderSlickGifts";
 import hand from "./img/hend.png";
 import TelegramBot from "../../TelegramBot/TelegramBot";
 function PageHome(){
@@ -73,8 +74,8 @@ function PageHome(){
 					<div className="arr-div"><img src={arrRight}/></div>
 				</a>
 			</div>
-			<div className="row no-gutters">
-				<div className="col-4 after-slider-col"><div><div className="imgafterslider imgafterslidercenter1">
+			<div className="row no-gutters">  
+				<div className="col-12 after-slider-col col-sm-12 col-md-4 col-lg-4 col-xl-4"><div><div className="imgafterslider imgafterslidercenter1">
 					<img  className="img-bigger" src={bascetofdelicacies}/>
 					<div className="basket-of-delicacies-div img-after-slider-absolute">
 						<p className="basket-of-delicacies-p">BASKET OF DELICACIES</p>
@@ -83,13 +84,13 @@ function PageHome(){
 						</div>
 					</div>
 					</div></div></div>
-				<div className="col-4 after-slider-col"><div><div className="imgafterslider imgafterslidercenter2">
+				<div className="col-12 after-slider-col col-sm-12 col-md-4 col-lg-4 col-xl-4"><div><div className="imgafterslider imgafterslidercenter2">
 					<img  className="img-bigger" src={frenchwine}/>
 					<div className="french-wine-div img-after-slider-absolute">
 						<p className="french-wine-p">FRENCH WINE</p>
 					</div>
 					</div></div></div>
-				<div className="col-4 after-slider-col"><div><div className="imgafterslider imgafterslidercenter3">
+				<div className="col-12 after-slider-col col-sm-12 col-md-4 col-lg-4 col-xl-4"><div><div className="imgafterslider imgafterslidercenter3">
 					<img className="img-bigger" id="img-bigger-tenuta" src={tenutaargentiera}/>
 					<div className="tenuta-argentiera-div img-after-slider-absolute">
 						<p className="tenuta-argentiera-p">TENUTA ARGENTIERA</p>
@@ -156,7 +157,7 @@ function PageHome(){
 			</article>
 			<article className="row no-gutters ">
 			<h2 className="main-h2 main-h2-1 col-6 offset-1">подарочные корзины</h2>
-				{/* <SimpleSlider></SimpleSlider> */}
+				<SimpleSliderGifts></SimpleSliderGifts>
 			</article>
 		</>
 	)
