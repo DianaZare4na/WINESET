@@ -19,7 +19,7 @@ export default function SimpleSliderGifts() {
       speed: 2500,
       autoplaySpeed: 2500,
 		centerMode: true,
-		centerPadding: "-60px",
+		centerPadding: "-100px",
   		focusOnSelect: true,
 		responsive: [
 			{
@@ -50,31 +50,67 @@ export default function SimpleSliderGifts() {
 		
 	};
 	return (
-			<Slider  className="col-11 offset-1 flex-slider article-simple-slider" {...settings}>
+			<Slider  className="col-11 offset-1 flex-slider article-simple-slider slider-gifts" {...settings}>
 			<div>
-				<div><img src={sliderF}/></div>
-				<h3></h3>
+				<div className="slider-gifts-div-img"><img src={sliderF}/></div>
+				<div>
+				<h4 className="h4-slider-gifts">Подарочный набор Sassicaia</h4>
+				<p className="p-slider-gifts">Состав:</p>
+						<ul className="ul-slider-gifts">
+							<li>Вино Primitivo, Feudi di San Gregorio 0,750</li>
+							<li>Сыр Montanari Gruzza 16 мес. выдержки 250г</li>
+							<li>Чатни к сыру 300г, Mrs Bridges</li>
+							<li>Печенье вафельное 200г, Belgian Butters</li>
+						</ul>
+				</div>
 			</div>
 			<div>
+			<div className="slider-gifts-div-img"><img src={sliderS}/></div>
+			<div>
+				<h4 className="h4-slider-gifts">Подарочный набор Juve Camps</h4>
+					<p className="p-slider-gifts">Состав:</p>
+						<ul className="ul-slider-gifts">
+							<li>Вино Primitivo, Feudi di San Gregorio 0,750</li>
+							<li>Сыр Montanari Gruzza 16 мес. выдержки 250г</li>
+							<li>Чатни к сыру 300г, Mrs Bridges</li>
+							<li>Печенье вафельное 200г, Belgian Butters</li>
+						</ul>
+				</div>
+			</div>
+			<div>
+			<div className="slider-gifts-div-img"><img src={slidert}/></div>
+			<div>
+				<h4 className="h4-slider-gifts">Подарочный набор Cesari</h4>
+					<p className="p-slider-gifts">Состав:</p>
+						<ul className="ul-slider-gifts">
+							<li>Вино Primitivo, Feudi di San Gregorio 0,750</li>
+							<li>Сыр Montanari Gruzza 16 мес. выдержки 250г</li>
+							<li>Чатни к сыру 300г, Mrs Bridges</li>
+							<li>Печенье вафельное 200г, Belgian Butters</li>
+						</ul>
+				</div>
+			</div>
+			<div>
+			<div className="slider-gifts-div-img"><img src={sliderF}/></div>
+			<div>
+				<h4 className="h4-slider-gifts">Подарочный набор P.V. Restituta</h4>
+					<p className="p-slider-gifts">Состав:</p>
+						<ul className="ul-slider-gifts">
+							<li>Вино Primitivo, Feudi di San Gregorio 0,750</li>
+							<li>Сыр Montanari Gruzza 16 мес. выдержки 250г</li>
+							<li>Чатни к сыру 300г, Mrs Bridges</li>
+							<li>Печенье вафельное 200г, Belgian Butters</li>
+						</ul>
+				</div>
+			</div>
+			{/* <div>
 			<div><img src={sliderS}/></div>
-				<h3></h3>
+			<h2 className="h2-slider-gifts"></h2>
 			</div>
 			<div>
 			<div><img src={slidert}/></div>
-				<h3></h3>
-			</div>
-			<div>
-			<div><img src={sliderF}/></div>
-				<h3></h3>
-			</div>
-			<div>
-			<div><img src={sliderS}/></div>
-				<h3></h3>
-			</div>
-			<div>
-			<div><img src={slidert}/></div>
-				<h3></h3>
-			</div>
+			<h2 className="h2-slider-gifts"></h2>
+			</div> */}
 		</Slider>
 	);
 }

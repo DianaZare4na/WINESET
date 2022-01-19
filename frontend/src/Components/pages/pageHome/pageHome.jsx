@@ -2,9 +2,7 @@ import React from "react";
 import {useEffect, useState} from "react";
 import './slider.css';
 import './homeStyle.css';
-import glass from "./img/glasSlider.png";
-import arrRight from "./img/arrright.png";
-import arrleft from "./img/arrleft.png";
+import mG from "./img/manGlass2.png";
 import frenchwine from "./img/frenchwine.png";
 import bascetofdelicacies from "./img/bascetofdelicacies.png";
 import tenutaargentiera from "./img/tenutaargentiera.png";
@@ -17,6 +15,7 @@ import SimpleSlider from "./sliderSlick";
 import SimpleSliderGifts from "./sliderSlickGifts";
 import hand from "./img/hend.png";
 import TelegramBot from "../../TelegramBot/TelegramBot";
+import Slider from "./slider";
 function PageHome(){
 	const [isLoad, setIsLoad] = useState(true);
 	if (!isLoad) return (
@@ -29,51 +28,7 @@ function PageHome(){
 
 	return(
 		<>
-			<div id="carouselExampleIndicators" className="row carousel slide" data-ride="carousel">
-				<ul className="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ul>
-				<div className="carousel-inner">
-					<div className="carousel-item active carusel-reletiv-div">
-						<img src={glass} className="d-block w-100" alt="..."/>
-						<div className="bacground-div">
-							<div className="bacground-div-text">
-								<p className="special-offer">Special offer</p>
-								<h2 className="glasses-сandles">glasses <br/>&#38; сandles</h2>
-								<p className="set-wine">СОЗДАЙ СВОЙ ВИННЫЙ СЕТ</p>
-							</div>
-						</div>
-					</div>
-					<div className="carousel-item carusel-reletiv-div">
-						<img src={glass} className="d-block w-100" alt="..."/>
-						<div className="bacground-div">
-						<div className="bacground-div-text">
-								<p className="special-offer">Special offer</p>
-								<h2 className="glasses-сandles">glasses <br/>	&#38; сandles</h2>
-								<p className="set-wine">СОЗДАЙ СВОЙ ВИННЫЙ СЕТ</p>
-							</div>
-						</div>
-					</div>
-					<div className="carousel-item carusel-reletiv-div">
-						<img src={glass} className="d-block w-100" alt="..."/>
-						<div className="bacground-div">
-							<div className="bacground-div-text">
-								<p className="special-offer">Special offer</p>
-								<h2 className="glasses-сandles">glasses <br/>	&#38; сandles</h2>
-								<p className="set-wine">СОЗДАЙ СВОЙ ВИННЫЙ СЕТ</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<div className="arr-div"><img src={arrleft}/></div>
-				</a>
-				<a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<div className="arr-div"><img src={arrRight}/></div>
-				</a>
-			</div>
+			<Slider></Slider>
 			<div className="row no-gutters">  
 				<div className="col-12 after-slider-col col-sm-12 col-md-4 col-lg-4 col-xl-4"><div><div className="imgafterslider imgafterslidercenter1">
 					<img  className="img-bigger" src={bascetofdelicacies}/>
@@ -150,7 +105,7 @@ function PageHome(){
 						minim veniam, quis nostrud exercitation ullamco labo</p>
 					<div className="div-delivery"><a className="a-delivery">ПОДРОБНЕЕ О ДОСТАВКЕ</a></div>
 				</section>
-				<section className="col-8 offset-2 telegramm-section"><TelegramBot></TelegramBot></section>
+				<section className="col-12 offset-0 telegramm-section col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2  col-xl-8 offset-xl-2"><TelegramBot></TelegramBot></section>
 				<section className="col-12">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.32832621304!2d31.990545815608726!3d46.974885479147886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c974a868e521%3A0xeae64eafb99934a2!2z0JrQvtC80L_RjNGO0YLQtdGA0L3QsNGPINCQ0LrQsNC00LXQvNC40Y8g0KjQkNCTINCd0LjQutC-0LvQsNC10LI!5e0!3m2!1sru!2sua!4v1641672417245!5m2!1sru!2sua" className="iframe" allowfullscreen="" loading="lazy"></iframe>
 				</section>
@@ -158,6 +113,20 @@ function PageHome(){
 			<article className="row no-gutters ">
 			<h2 className="main-h2 main-h2-1 col-6 offset-1">подарочные корзины</h2>
 				<SimpleSliderGifts></SimpleSliderGifts>
+			</article>
+			<article className="row no-gutters">
+				<section className="col-12">
+					<div className="reletiv-div-man">
+					<div className="img-div-man"><img src={mG} alt="..."/></div>
+						<div className="bacground-div bacground-div-man">
+						<div className="bacground-div-text-man bacground-div-text-man-down">
+								<p className="special-offer special-offer-down">Sommelier Choice</p>
+								<h2 className="glasses-сandles glasses-сandles-down">НЕ УВЕРЕНЫ В ВЫБОРЕ? <br/> МЫ ГОТОВЫ ПОМОЧЬ!</h2>
+								<a className="set-wine set-wine-down">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</a>
+							</div>
+						</div>
+					</div>
+				</section>
 			</article>
 		</>
 	)

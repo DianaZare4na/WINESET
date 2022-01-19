@@ -3,6 +3,10 @@
 	src: url(./Inter/static/Inter-Regular.ttf);
 }
 @font-face {
+	font-family: "InterSamy";
+	src: url(./Inter/static/Inter-SemiBold.ttf);
+}
+@font-face {
 	font-family: "Cormorant";
 	src: url(./Cormorant/Cormorant-Bold.ttf);
 }

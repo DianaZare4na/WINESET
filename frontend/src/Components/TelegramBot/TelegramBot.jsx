@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
+import './TelegrammBot.css';
 import wineGlass from "../pages/pageHome/img/winGlass.png";
 const TelegramBot = () => {
 	const [body, setBody] = useState("");
@@ -36,7 +37,7 @@ const TelegramBot = () => {
 							<input type="text" name="name" id="usName" onChange={(el) => {setName(el.target.value)}} placeholder="Введите своe имя..." /> <br/>
 							<input type="text" name="tel" id="usTel" onChange={(el) => {setTel(el.target.value)}} placeholder="Введите свой номер телефона..." /> <br/>
 							<textarea type="text" name="body" id="usBody" onChange={(el) => {setBody(el.target.value)}} placeholder="Ваше сообщение..."></textarea><br/>
-							<button type="button" className="btn btn-primary" onClick={() =>send() } >Отправить</button>
+							<button type="button" className="btn btn-primary telegramm-btn" onClick={() =>send() } >Отправить</button>
 						</div>
 					</div>
 				</form>

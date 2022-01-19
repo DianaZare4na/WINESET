@@ -133,6 +133,11 @@ h4{
 	padding: 10% 17%;
 	margin-left: -5%;
 	margin-right: -20%;
+	cursor: pointer;
+}
+.a-delivery:hover{
+	text-decoration: none;
+	color:crimson;
 }
 .div-delivery{
 	margin-top: 78%;
@@ -151,63 +156,67 @@ h4{
 .telegramm-section{
 	z-index: 2;
 }
-.telegramm-div{
-	box-shadow: -6px 7px 32px 9px rgba(34, 60, 80, 0.1);
-	display: flex;
-	background-color: #fff;
-	z-index: 100;
-	justify-content: center;
-	margin-top: 140px;
-	margin-bottom: -140px;
+.reletiv-div-man{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
-.telegramm-form{
-	background-image: url("./img/bgForm.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100%;
-	flex: 1;
+.bacground-div-man{
+	width: 59%;
+	right: -4.3%;
 }
-.telegramm-form div.telegramm-form-div{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.telegramm-div-img{
-	flex: 1;
-}
-.telegramm-div img{
+.img-div-man img{
 	width: 100%;
 }
-.telegramm-h2{
-	margin-top: 118px;
-	margin-bottom: 80px;
-	font-size: 32px;
-	text-align: center;
-}
-div.telegramm-form-div-div input{
-	border: none;
-	background-color:#F4F4F4;
-	font-size: 16px;
-	padding: 3.8%;
-	margin-bottom: 30px;
-	width: 100%;
-}
-.telegramm-form-div-div{
-	width: 73%;
-}
-div.telegramm-form-div-div textarea{  
-	padding: 3.8% 0 33% 3.8%;
-	width: 100%;
-	border: none;
-	background-color:#F4F4F4;
-	margin-bottom: 30px;
-}
-div.telegramm-form-div-div button{
+.img-div-man{
 	width: 50%;
-	margin-left: 25%;
+}
+.bacground-div-text-man{
+	transform: skew(20deg);
+}
+.special-offer-down{
+	font-size: 2.5vw;
+}
+.glasses-сandles-down{
+	font-size: 2.4vw;
+	padding-bottom: 6%;
+}
+.set-wine-down{
+	margin-left: 28%;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+@media (max-width: 1500px){
+	.iframe{
+		height: 471px; 
+	}
+}
+
+@media (max-width: 1200px) {
+	h4{
+		font-size: 1.4vw;
+	}
+	.p-main{
+		font-size: 1vw;
+	}
+	.p-article{
+		font-size: 1vw;
+	}
+	.iframe{
+		height: 371px; 
+	}
+}
+@media (max-width: 991.98px){
+	.iframe{
+		height: 300px; 
+	}
 }
 @media (max-width: 767.98px) {
 	.imgafterslider{
 		max-height: 150px;
+	}
+	.iframe{
+		height: 250px; 
 	}
 }

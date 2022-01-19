@@ -1,0 +1,114 @@
+.telegramm-div{
+	box-shadow: -6px 7px 32px 9px rgba(34, 60, 80, 0.1);
+	display: flex;
+	background-color: #fff;
+	z-index: 100;
+	justify-content: center;
+	margin-top: 11%;
+	margin-bottom: -11%;
+}
+.telegramm-form{
+	background-image: url("./../pages/pageHome/img/bgForm.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	flex: 1;
+}
+.telegramm-form div.telegramm-form-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.telegramm-div-img{
+	flex: 1;
+}
+.telegramm-div img{
+	width: 100%;
+}
+.telegramm-h2{
+	margin-top: 18%;
+	margin-bottom: 13%;
+	font-size: 1.7vw;
+	text-align: center;
+}
+div.telegramm-form-div-div input{
+	border: none;
+	background-color:#F4F4F4;
+	font-size: .9vw;
+	padding: 3.8%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+.telegramm-form-div-div{
+	width: 73%;
+}
+div.telegramm-form-div-div textarea{  
+	padding: 3.8% 0 33% 3.8%;
+	width: 100%;
+	border: none;
+	background-color:#F4F4F4;
+	margin-bottom: 6%;
+	font-size: .9vw;
+	resize: none;
+}
+div.telegramm-form-div-div textarea:focus{
+	outline: none;
+}
+div.telegramm-form-div-div button{
+	width: 50%;
+	margin-left: 25%;
+}
+@media (max-width: 1199.98px) {
+	div.telegramm-form-div-div input{
+		font-size: 1vw;
+	}
+	div.telegramm-form-div-div textarea{  
+		font-size: 1vw;
+	}
+	.telegramm-h2{
+		font-size: 1.8vw;
+	}
+}
+@media (max-width: 767.98px) {
+	div.telegramm-form-div-div input{
+		font-size: 10px;
+	}
+	div.telegramm-form-div-div textarea{  
+		font-size: 10px;
+	}
+	.telegramm-h2{
+		font-size:  16px;
+	}
+	.telegramm-btn{
+		font-size: 1.8vw;
+	}
+}
+@media (max-width: 470px) {
+	div.telegramm-form-div-div input{
+		font-size: 8px;
+	}
+	div.telegramm-form-div-div textarea{  
+		font-size: 8px;
+		padding: 3.8% 0 23% 3.8%;
+	}
+	.telegramm-h2{
+		font-size:  11px;
+	}
+	.telegramm-btn{
+		font-size: 2vw;
+	}
+}
+@media (max-width: 380px) {
+	div.telegramm-form-div-div input{
+		font-size: 6px;
+	}
+	div.telegramm-form-div-div textarea{  
+		font-size: 6px;
+		padding: 3.8% 0 23% 3.8%;
+	}
+	.telegramm-h2{
+		font-size: 9px;
+		margin-top: 10%;
+		margin-bottom: 7%;
+	}
+}

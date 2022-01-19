@@ -8,13 +8,13 @@ import sliderS from "./img/sliderS.png";
 
 export default function SimpleSlider() {
 	const settings = {
-		arrows: false,
-		dots: true,
+		arrows: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
       speed: 1500,
       autoplaySpeed: 1500,
 		centerMode: true,
@@ -47,32 +47,33 @@ export default function SimpleSlider() {
 		 ]
 		
 	};
-	return (
+	return (<>
 			<Slider  className="col-11 offset-1 flex-slider article-simple-slider" {...settings}>
 			<div>
-				<img src={sliderF}/>
+				<div className="div-img-slider"><img src={sliderF}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<img src={sliderS}/>
+				<div className="div-img-slider"><img src={sliderS}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<img src={sliderF}/>
+				<div className="div-img-slider"><img src={sliderF}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<img src={sliderS}/>
+				<div className="div-img-slider"><img src={sliderS}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<img src={sliderF}/>
+				<div className="div-img-slider"><img src={sliderS}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<img src={sliderS}/>
+				<div className="div-img-slider"><img src={sliderS}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 		</Slider>
+		</>
 	);
 }
