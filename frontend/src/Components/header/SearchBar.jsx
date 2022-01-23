@@ -17,7 +17,7 @@ function SearchBar() {
 
 	useEffect(() => {
 		//  console.log("Состояние_" + searchString);
-
+      if (searchString.length < 2) return;
 		 fetch("http://localhost:3001/api/product/autocomplete?searchString=" + searchString)
 			  .then(res => {
 			//   console.log(res);
@@ -34,7 +34,7 @@ function SearchBar() {
 		<>
 		 
 		<label className="inputsearch">
- 			<input type="text" onChange={onCange} placeholder="Найти напиток..."/>
+ 			<input type="text"  id="iputSearch" onChange={onCange} placeholder="Найти напиток..."/>
 		</label>
 		<AutocompleteCollection items={Items}></AutocompleteCollection>
 

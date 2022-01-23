@@ -9,7 +9,7 @@ export function AutocompleteCollection (props){
 
    
     return (
-        <ul className="ulautocompletecollection">
+        <ul className="ulautocompletecollection" id="ulautocompletecollection">
             {
                 items.map( item => 
                 <AutocompleteItem key={item._id} item={item}></AutocompleteItem>
