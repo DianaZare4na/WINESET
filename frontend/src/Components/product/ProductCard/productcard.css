@@ -16,18 +16,19 @@
    margin-bottom: 20%;
 }
 .wine-bg-img{
+   padding-top: 2%;
+}
+.div-wine-bg-img{
    background-image: url("./img/Group.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 90%;
+	background-size: 100%;
    padding-top: 2%;
-   padding-left: 5%;
-}
-.div-wine-bg-img{
-   width: 75%;
+   padding-left: 7%;
 }
 .div-wine-bg-img img{
-   width: 100%;
+   width: 70%;
+   margin-left: 7%;
 }
 .stars{
    display: flex;
@@ -63,10 +64,12 @@
 }
 .kharakter li{
    margin-bottom: 4%;
+   font-size: .9vw;
 }
 .div-bg-color{
    background-color: rgba(164, 164, 164, 0.15);
    padding: 5% 7%;
+   position: relative;
 }
 .p-strike{
    text-decoration: line-through;
@@ -121,7 +124,7 @@
    font-size: 1.2vw;
 }
 .btn-put-cart{
-   width: 200%;
+   /*width: 200%;*/
 }
 .row-product{
    padding-right: 0;
@@ -176,5 +179,13 @@
 }
 .betters-2 li:nth-child(2){
    background-image: url("./img/message-circle1.png");
+}
+.div-bg-color-img{
+   position: absolute;
+   right: 0;
+   width: 85%;
+}
+.div-bg-color-img img{
+   width: 100%;
 }
 

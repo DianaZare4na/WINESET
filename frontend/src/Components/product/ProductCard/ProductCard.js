@@ -5,7 +5,7 @@ import Star from "./img/Star.png";
 import znak1 from "./img/znak1.png";
 import znak2 from "./img/znak2.png";
 import znak3 from "./img/znak3.png";
-
+import imgbg from "./img/winebgpr.png"
 //import ProductInBasket from "./ProductInBasket";
 export function ProductCard (){
    let params = useParams();
@@ -116,6 +116,7 @@ export function ProductCard (){
                   </ul>
                </div>
             </div>
+            <div className="div-bg-color-img"><img src={imgbg}/></div>
          </div>
 		</div>
    )
