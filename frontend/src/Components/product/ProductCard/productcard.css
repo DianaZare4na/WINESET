@@ -1,15 +1,180 @@
-.liproductcard-wine{
-	list-style-type: none;
-	margin: 20px;
+.product-name{
+   font-family: "Cormorant";
+   text-transform: uppercase;
+   font-size: 2.5vw;
 }
-.divproductcard-wine{
-	border: 3px solid rgba(164, 164, 164, 0.15);
-	height: 530px;
-	width: 320px;
+.ul-thee-left-img li img{
+   width: 100%;
+}
+.ul-thee-left-img{
+   margin: 0;
+   padding-top: 105%;
+   padding-left: 0;
+   padding-right: 15%; 
+}
+.ul-thee-left-img li{
+   margin-bottom: 20%;
+}
+.wine-bg-img{
+   background-image: url("./img/Group.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+   padding-top: 2%;
+   padding-left: 5%;
+}
+.div-wine-bg-img{
+   width: 75%;
+}
+.div-wine-bg-img img{
+   width: 100%;
+}
+.stars{
+   display: flex;
+   font-size: .9vw;
+}
+.stars div{
+   padding-left: .5%;
+}
+.stars div img{
+   width: 80%;
+}
+.stars p{
+   padding: 0;
+   margin: 0;
+   padding-right: 2%;
+}
+.raiting{
+   font-weight: 500;
+   font-size: .9vw;
+}
+.znak{
+   display: flex;
+   padding-bottom: 6%;
+}
+.znak div img{
+   width: 90%;
+}
+.znak div{
+   padding-right: 2%;
+}
+.kharakter{
+   padding-top: 5%;
+}
+.kharakter li{
+   margin-bottom: 4%;
+}
+.div-bg-color{
+   background-color: rgba(164, 164, 164, 0.15);
+   padding: 5% 7%;
+}
+.p-strike{
+   text-decoration: line-through;
+   color: rgba(20, 20, 20, 0.35);
+   font-size: 0.9vw;
+}
+.p-price{
+   color: #7A0000;
+   font-family: "InterSamy";
+   font-size: 1.7vw;
+}
+.div-action{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: .7vw;
+   font-family: "Inter";
+   color: #fff;
+   background-color: #000;
+   height: 100%;
+   width: 13.7%;
+   margin-left: 4%;
+   padding: 2% 0;
+   border-radius: 3px;
+}
+.div-price{
+   display: flex;
+}
+.div-count-buttons{
+   display: flex;
+   margin-top: 3%;
+}
+.div-count{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #F9F9FC;
+   width: 23%;
+   height: 17%;
+   margin-right: 10%;
+   padding: 0 1%;
+}
+.decrement-increment{
+   border: none;
+   font-size: 1.2vw;
+   background-color: #F9F9FC;
+}
+.div-count-h5{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2vw;
+}
+.btn-put-cart{
+   width: 200%;
+}
+.row-product{
+   padding-right: 0;
+   margin-right: 0;
+}
+.col-div-bg-color{
+   padding-right: 0;
+   margin-right: 0;
+   padding-top: 5.2%;
+}
+.div-betters{
+   display: flex;
+   margin-top: 8%;
+   font-size: .6vw;
+}
+.betters{
+   margin-left: 0;
+   padding-left: 0;
+   width: 38%;
+}
+.betters-2{
+   margin-left: 0;
+   padding-left: 0;
+   width: 50%;
+}
+.betters li{
+   background-repeat: no-repeat;
+	background-position: left;
+   background-size: 8.5%;
+   padding-left: 10%;
+   margin-bottom: 7%;
+}
+.betters-2 li{
+   background-repeat: no-repeat;
+	background-position: left;
+   background-size: 7%;
+   padding-left: 8.5%;
+   margin-bottom: 5.5%;
+}
+.betters li:nth-child(1){
+   background-image: url("./img/map-pin1.png");
+}
+.betters li:nth-child(2){
+   background-image: url("./img/award1.png");
+}
+.betters li:nth-child(3){
+   background-image: url("./img/clock1.png");
+   margin-bottom: 0;
+}
+.betters-2 li:nth-child(1){
+   background-image: url("./img/info1.png");
+}
+.betters-2 li:nth-child(2){
+   background-image: url("./img/message-circle1.png");
+}
 
-}
-.ulproductcard-wine{
-	display: flex;
-	padding: 0;
-	justify-content: space-between;
-}

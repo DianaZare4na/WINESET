@@ -5,12 +5,14 @@ import Star from "./img/Star.png";
 import znak1 from "./img/znak1.png";
 import znak2 from "./img/znak2.png";
 import znak3 from "./img/znak3.png";
+
 //import ProductInBasket from "./ProductInBasket";
 export function ProductCard (){
    let params = useParams();
 
    const [product, setProduct] = useState({});
    const [isLoad, setIsLoad] = useState(false);
+
    const [count, setCount] = useState(0);
 
    const handleIncrement = () => {
@@ -19,6 +21,9 @@ export function ProductCard (){
 
    const handleDecrement = () => {
       setCount(prevCount => prevCount - 1);
+      if(setCount(0)){
+         return;
+      }
    };
    console.log(params);
    useEffect( () => {
@@ -29,9 +34,9 @@ export function ProductCard (){
                .then(res => {
                   console.log(res);
                   setProduct(res); 
+                  setIsLoad(true); 
                   document.getElementById("iputSearch").value = " "; 
                   document.getElementById("ulautocompletecollection").innerText = " ";
-                  setIsLoad(true); 
                })
                .catch(err =>
                   console.log(err))
@@ -47,29 +52,30 @@ export function ProductCard (){
    let img2 = "http://localhost:3001" + product.imageTwo;
    let img3 = "http://localhost:3001" + product.imageThree;
    return (
-		<div className="row">
-			<div className="col-5 offset-1"><h2>{product.name}</h2><div className="col-1 offset-4"></div></div>
+		<div className="row row-product">
+			<div className="col-5 offset-1"><h2 className="product-name">Вино {product.name}</h2></div>
+         <div className="col-1 offset-4"></div>
 			<div className="col-1 offset-1">
-            <ul>
+            <ul className="ul-thee-left-img">
                <li><img src={img1}/></li>
                <li><img src={img2}/></li>
                <li><img src={img3}/></li>
             </ul>
          </div>
-         <div className="col-3">
-            <div><img src={img}/></div>
+         <div className="col-3 wine-bg-img">
+            <div className="div-wine-bg-img"><img src={img}/></div>
          </div>
-         <ul className="col-3">
-            <li>Рейтинг:</li>
-            <li>
-               <span>4.8</span>
+         <ul className="col-3 kharakter">
+            <li className="raiting">Рейтинг:</li>
+            <li className="stars">
+               <p>4.8</p>
                <div><img src={Star}/></div>
                <div><img src={Star}/></div>
                <div><img src={Star}/></div>
                <div><img src={Star}/></div>
                <div><img src={Star}/></div>
             </li>
-            <li>
+            <li className="znak">
                <div><img src={znak1}/></div>
                <div><img src={znak2}/></div>
                <div><img src={znak3}/></div>
@@ -83,17 +89,34 @@ export function ProductCard (){
             <li><a>Смотреть все характеристики</a></li>
          </ul>
          {/*<ProductInBasket></ProductInBasket>*/}
-         <div className="col-4">
-         <p >{product} <span>-15%</span></p>
-         <div>
-         <div>
-            <button onClick={handleDecrement}>-</button>
-            <h5>Count is {count}</h5>
-            <button onClick={handleIncrement}>+</button>
+         <div className="col-4 col-div-bg-color">
+            <div className="div-bg-color">
+               <p className="p-strike">7500грн.</p>
+               <div className="div-price">
+                  <p className="p-price">{product.price}грн.</p>
+                  <div className="div-action">-15%</div>
+               </div>
+               <div className="div-count-buttons">
+                  <div className="div-count">
+                     <button className="decrement-increment" onClick={handleDecrement}>-</button>
+                     <div className="div-count-h5">{count}</div>
+                     <button className="decrement-increment" onClick={handleIncrement}>+</button>
+                  </div>
+                  <div><button className="btn btn-put-cart">В корзину</button></div>
+               </div>
+               <div className="div-betters">
+                  <ul className="betters">
+                     <li>Преимущество 1</li>
+                     <li>Преимущество 2</li>
+                     <li>Преимущество 3</li>
+                  </ul>
+                  <ul className="betters-2">
+                     <li>Преимущество 4</li>
+                     <li>Преимущество 5</li>
+                  </ul>
+               </div>
             </div>
-            <button onClick={() => setCount(0)}>Reset</button>
          </div>
-      </div>
-			</div>
+		</div>
    )
 }
