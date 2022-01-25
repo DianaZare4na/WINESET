@@ -36,3 +36,26 @@ button.btn{
 input:focus {
 	outline: none; 
 }
+.modal-header{
+   position: relative;
+   background-color: #121212;
+   color: #fff;
+   justify-content: center;
+   align-items: center;
+}
+.close{
+   position: absolute;
+   right: 20px;
+   top: 0;
+   bottom: 0;
+   color: #fff;
+   font-weight: lighter;
+   text-shadow: none;
+   opacity: 1;
+}
+.close:hover{
+   color:#fff;
+}
+.modal-footer{
+   border-top: none;
+}

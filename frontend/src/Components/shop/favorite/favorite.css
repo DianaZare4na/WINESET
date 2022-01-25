@@ -1,0 +1,18 @@
+.div-hurt{
+	display: flex;
+	justify-content: end;
+   position: relative;
+}
+.favorite-length{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   right: 5%;
+   top: -25%;
+   padding: .5% 2%;
+   border-radius: 50%;
+   font-size: 9px;
+   background-color: red;
+   color: #fff;
+}

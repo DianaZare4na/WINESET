@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
 import {useEffect, useState} from "react";
-import '../ProductCard/productcard.css';
+import './productcard.css';
 import Star from "./img/Star.png";
 import znak1 from "./img/znak1.png";
 import znak2 from "./img/znak2.png";
 import znak3 from "./img/znak3.png";
 import imgbg from "./img/winebgpr.png"
-//import ProductInBasket from "./ProductInBasket";
+import Count from "./Count";
 export function ProductCard (){
    let params = useParams();
 
@@ -36,7 +36,7 @@ export function ProductCard (){
                   setProduct(res); 
                   setIsLoad(true); 
                   document.getElementById("iputSearch").value = " "; 
-                  document.getElementById("ulautocompletecollection").innerText = " ";
+                  document.getElementById("ulautocompletecollection").innerText = "";
                })
                .catch(err =>
                   console.log(err))
@@ -88,7 +88,7 @@ export function ProductCard (){
             <li>Объем: {product.Value[0]}</li>
             <li><a>Смотреть все характеристики</a></li>
          </ul>
-         {/*<ProductInBasket></ProductInBasket>*/}
+         
          <div className="col-4 col-div-bg-color">
             <div className="div-bg-color">
                <p className="p-strike">7500грн.</p>
@@ -97,11 +97,7 @@ export function ProductCard (){
                   <div className="div-action">-15%</div>
                </div>
                <div className="div-count-buttons">
-                  <div className="div-count">
-                     <button className="decrement-increment" onClick={handleDecrement}>-</button>
-                     <div className="div-count-h5">{count}</div>
-                     <button className="decrement-increment" onClick={handleIncrement}>+</button>
-                  </div>
+                  <Count count={count}></Count>
                   <div><button className="btn btn-put-cart">В корзину</button></div>
                </div>
                <div className="div-betters">

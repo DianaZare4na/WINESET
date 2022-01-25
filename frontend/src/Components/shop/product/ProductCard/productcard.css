@@ -19,7 +19,7 @@
    padding-top: 2%;
 }
 .div-wine-bg-img{
-   background-image: url("./img/Group.png");
+   background-image: url("img/Group.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
@@ -106,7 +106,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: #F9F9FC;
+   background-color: #fff;
    width: 23%;
    height: 17%;
    margin-right: 10%;
@@ -115,7 +115,7 @@
 .decrement-increment{
    border: none;
    font-size: 1.2vw;
-   background-color: #F9F9FC;
+   background-color: #fff;
 }
 .div-count-h5{
    display: flex;
@@ -165,20 +165,20 @@
    margin-bottom: 5.5%;
 }
 .betters li:nth-child(1){
-   background-image: url("./img/map-pin1.png");
+   background-image: url("img/map-pin1.png");
 }
 .betters li:nth-child(2){
-   background-image: url("./img/award1.png");
+   background-image: url("img/award1.png");
 }
 .betters li:nth-child(3){
-   background-image: url("./img/clock1.png");
+   background-image: url("img/clock1.png");
    margin-bottom: 0;
 }
 .betters-2 li:nth-child(1){
-   background-image: url("./img/info1.png");
+   background-image: url("img/info1.png");
 }
 .betters-2 li:nth-child(2){
-   background-image: url("./img/message-circle1.png");
+   background-image: url("img/message-circle1.png");
 }
 .div-bg-color-img{
    position: absolute;

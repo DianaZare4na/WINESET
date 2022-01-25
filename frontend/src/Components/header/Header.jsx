@@ -1,7 +1,7 @@
 import '../body.css';
 import './headerStyle.css';
 import Logo from "./img/Logo.png";
-import SearchBar from './SearchBar';
+import SearchBar from '../shop/product/Autocomplite/SearchBar';
 import Checkout from './Checkout';
 import OurContactMenu from './OurContactMenu';
 import {Link} from "react-router-dom";

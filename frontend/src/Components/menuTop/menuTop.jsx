@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import './menuTop.css';
-import ShoppingCart from "../shoppingCart/shoppingCart";
-import Favorite from "../favorite/favorite";
+//import BasketWidget from "../shop/basket/BasketWidget";
+//import Favorite from "../favorite/favorite";
 function MenuTop(){
 
 	return(
@@ -52,8 +52,8 @@ function MenuTop(){
 				</div>
 		</nav>
 		</div>
-		<Favorite></Favorite>
-		<ShoppingCart></ShoppingCart>
+		
+		
 		</>
 	);
 

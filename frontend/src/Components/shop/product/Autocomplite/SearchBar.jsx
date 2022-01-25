@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {AutocompleteCollection} from "../product/Autocomplite/Autocomplete.collection"
+import {AutocompleteCollection} from "./Autocomplete.collection";
 
 import "./SearchBar.css";
 
