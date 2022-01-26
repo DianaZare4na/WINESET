@@ -11,16 +11,12 @@
    align-items: center;
    left: 25%;
    top: -7%;
-   padding: .5% 2%;
+   padding: 0 2.8%;
    border-radius: 50%;
    font-size: 9px;
    background-color: red;
    color: #fff;
 }
-/*.basket-all{
-   position: absolute;
-   background-color: #fff;
-}*/
 .div-basket-item{
    display: flex;
    justify-content: space-between;
@@ -59,4 +55,51 @@
 }
 .remove{
    cursor: pointer;
+}
+.modal-futer-div{
+   display: block;
+   padding: 0 7%;
+}
+.modal-futer-div hr{
+   background-color: #000;
+}
+.basket-btn-div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5% 0;
+}
+.basket-btn-div button{
+   padding: 2% 10%;
+}
+.div-all-price{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 2%;
+}
+.all-price{
+   font-family: "InterSamy";
+   font-size: .9vw;
+}
+.prise-flex1 h3{
+   font-size: 1.1vw;
+   font-family: "InterSamy";
+}
+.prise-flex1 p{
+   width: 70%;
+   font-size: .7vw;
+}
+.modal-body-basket{
+   padding: 5% 7%;
+}
+.modal-dialog-basket {
+   max-width: 32%;
+   margin-left: 68%;
+   margin-top: 7.3%;
+}
+.count-basket .div-count-h5{
+   padding: 8.5% 100%;
+}
+.modal-backdrop {
+   top: 14.2%;
 }

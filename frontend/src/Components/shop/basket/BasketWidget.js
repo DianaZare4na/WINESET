@@ -8,7 +8,8 @@ export  function BasketWidget ({basket}) {
       <>
       <div className="col-1 col-div-cart" data-toggle="modal" data-target="#BasketAll">
       <div className="basket-length">
-         {basket.length}
+         {/*{basket.length}*/}
+         {basket.length ? <span>{basket.length}</span> : null}
       </div>
       <img src={cart}/>
       </div>

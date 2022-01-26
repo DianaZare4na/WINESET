@@ -18,6 +18,7 @@ import {ProductCatalog} from "./Components/shop/products/ProductCatalog";
 import {BasketWidget} from "./Components/shop/basket/BasketWidget";
 import {BasketAll} from "./Components/shop/basket/BasketAll";
 import {Favorite} from "./Components/shop/favorite/favorite";
+import PageCheckout from "./Components/pages/pageCheckout/pageCheckout";
 class App extends Storage {
 
 	componentDidMount() {
@@ -48,6 +49,9 @@ class App extends Storage {
 						<Route path="/gifts" element={<PageGifts/>}/>
 						<Route path="/delicacies" element={<Delicacies/>}/>
 						<Route path="/glassesandcandles" element={<GlassesAndCandles/>}/>
+                  <Route path="/checkout" element={<PageCheckout/>}/>
+                  <Route path="/basket" element={<BasketAll/>}/>
+                  
 					</Routes>
 					{/* <Routes>
                     <PageError error={"404 not found"}></PageError>

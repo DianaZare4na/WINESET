@@ -36,6 +36,9 @@ button.btn{
 input:focus {
 	outline: none; 
 }
+select:focus {
+	outline: none; 
+}
 .modal-header{
    position: relative;
    background-color: #121212;
@@ -58,4 +61,7 @@ input:focus {
 }
 .modal-footer{
    border-top: none;
+}
+textarea:focus{
+	outline: none;
 }

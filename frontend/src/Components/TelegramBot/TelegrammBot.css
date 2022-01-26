@@ -51,9 +51,6 @@ div.telegramm-form-div-div textarea{
 	font-size: .9vw;
 	resize: none;
 }
-div.telegramm-form-div-div textarea:focus{
-	outline: none;
-}
 div.telegramm-form-div-div button{
 	width: 50%;
 	margin-left: 25%;

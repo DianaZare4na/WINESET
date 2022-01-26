@@ -106,7 +106,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: #fff;
+   background-color: #F9F9FC;
    width: 23%;
    height: 17%;
    margin-right: 10%;
@@ -115,16 +115,15 @@
 .decrement-increment{
    border: none;
    font-size: 1.2vw;
-   background-color: #fff;
+   background-color: #F9F9FC;
 }
 .div-count-h5{
    display: flex;
    justify-content: center;
    align-items: center;
    font-size: 1.2vw;
-}
-.btn-put-cart{
-   /*width: 200%;*/
+   background-color: #F9F9FC;
+   height: 100%;
 }
 .row-product{
    padding-right: 0;
