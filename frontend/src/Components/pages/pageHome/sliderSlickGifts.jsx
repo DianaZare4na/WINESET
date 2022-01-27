@@ -9,15 +9,15 @@ import slidert from "./img/gifts3.png";
 
 export default function SimpleSliderGifts() {
 	const settings = {
-		arrows: false,
+		arrows: true,
 		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		autoplay: true,
-      speed: 2500,
-      autoplaySpeed: 2500,
+      speed: 1500,
+      autoplaySpeed: 1500,
 		centerMode: true,
 		centerPadding: "-100px",
   		focusOnSelect: true,

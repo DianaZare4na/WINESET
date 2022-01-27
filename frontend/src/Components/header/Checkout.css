@@ -27,6 +27,9 @@
 	display: flex;
 	justify-content: center;
 }
+.modal-body-mailer{
+   padding: 5%;
+}
 @media (max-width: 1598px) {
 	.checkout{
 		font-size: 1vw;

@@ -8,6 +8,7 @@ class Storage extends React.Component {
             products: [],
             basket:[],
             favorite:[],
+            isLoaded: false,
             user: {}
          }
 
@@ -16,6 +17,15 @@ class Storage extends React.Component {
          }else if(localStorage.getItem("favorite")){
             this.state.favorite = JSON.parse(localStorage.getItem("favorite"));
          }
+      }
+      renderLoading(){
+         return (
+               <div className="d-flex justify-content-center">
+                  <div className="spinner-border" role="status">
+                     <span className="sr-only">Loading...</span>
+                  </div>
+               </div>
+         )
       }
 
       // Загрузка данных с сервера

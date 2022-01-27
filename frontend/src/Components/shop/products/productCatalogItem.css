@@ -1,0 +1,65 @@
+.product-catalog-item{
+   width: 20%;
+   margin: 2%;
+}
+.product-catalog-item-content{
+   border: 3px solid rgba(164, 164, 164, 0.15);
+   padding: 3.5% 4.5%;
+}
+.product-catalog-item-bg-im{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url("img/Group.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+   padding-top: 2%;
+   padding-left: 7%;
+   position: relative;
+}
+.product-catalog-item-bg-im div img{
+   width: 100%;
+}
+.product-catalog-item-h3{
+   font-weight: 500;
+   font-size: .97vw;
+   margin-top: 5%;
+}
+.product-catalog-item-p{
+   background-image: url("./img/glass.png");
+   background-repeat: no-repeat;
+	background-position: left;
+   background-size: 7%;
+   padding-left: 9%;
+   margin-bottom: 1.7%;
+   font-size: .73vw;
+   color: rgba(0, 0, 0, 0.5);
+}
+.product-catalog-item-p2{
+   background-image: url("./img/win.png");
+}
+.product-catalog-item-p-price{
+   font-size: .95vw;
+   /*margin-top: 7%;*/
+   margin-bottom: 0;
+}
+.product-catalog-item-khr{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   color: rgba(0, 0, 0, 0.5);
+   line-height: 200%;
+   padding-bottom: 2%;
+   font-size: .75vw;
+}
+.product-catalog-item-span-p{
+   padding-top: 7%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.product-catalog-item-btn{
+   width: 100%;
+   margin-top: 10px;
+}

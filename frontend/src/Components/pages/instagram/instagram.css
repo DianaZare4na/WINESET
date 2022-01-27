@@ -1,0 +1,60 @@
+.reletiv-div-man{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.bacground-div-man{
+	width: 59%;
+	right: -4.3%;
+}
+.img-div-man img{
+	width: 100%;
+}
+.img-div-man{
+	width: 50%;
+}
+.bacground-div-text-man{
+	transform: skew(20deg);
+}
+.special-offer-down{
+	font-size: 2.5vw;
+}
+.glasses-сandles-down{
+	font-size: 2.4vw;
+	padding-bottom: 6%;
+}
+.set-wine-down{
+	margin-left: 28%;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.instagram-main-h2{
+   margin-top: 0;
+   margin-bottom: 2%;
+}
+.row-instagram{
+   padding-top: 5%;
+   padding-bottom: 8%;
+   background-image: url("./img/winbg.png");
+	background-repeat: no-repeat;
+	background-position: right 95%;
+	background-size: 21%;
+}
+.instagram-div-delivery{
+   margin-top: .8%;
+}
+.instagram-div-delivery-a{
+   padding: 5% 7%;
+   width: 80%;
+}
+
+.instagram-col{
+   display: flex;
+}
+.instagram-img-div img{
+   width: 100%;
+}
+.instagram-img-div{
+   margin: 2px;
+}

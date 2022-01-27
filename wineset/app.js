@@ -30,8 +30,11 @@ app.use(multer({dest: "public/upload"}).single("fileData"));
 // Маршруты
 const apiRoute = require("./routes/apiRouter");
 app.use(apiRoute);
-
+//телеграмм бот
 let apiBot = require('./routes/apiTelegram');
 app.use('/api', apiBot);
+//мейлер
+let apiMail = require('./routes/apiMailer');
+app.use('/api', apiMail);
 
 module.exports = app

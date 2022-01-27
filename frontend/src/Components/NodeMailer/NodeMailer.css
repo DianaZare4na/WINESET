@@ -1,0 +1,18 @@
+.node-mailer-input{
+   border: none;
+	background-color:#F4F4F4;
+	font-size: .9vw;
+	padding: 2%;
+	margin-bottom: 2%;
+	width: 100%;
+}
+.btn-node-mailer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.btn-node-mailer button{
+   padding: 2% 20%;
+   margin: 2%;
+}

@@ -72,6 +72,10 @@
 .basket-btn-div button{
    padding: 2% 10%;
 }
+.basket-btn-div button a{
+   color: #fff;
+   text-decoration: none;
+}
 .div-all-price{
    display: flex;
    justify-content: space-between;

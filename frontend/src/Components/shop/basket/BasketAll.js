@@ -19,7 +19,7 @@ export function BasketAll ({products, removeFromBasket}) {
    }
    return (
    
-      <div className="modal fade" id="BasketAll" tabindex="-1" aria-labelledby="BasketAll" aria-hidden="true">
+      <div className="modal fade" id="BasketAll" tabindex="-1" aria-labelledby="BasketAllLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-basket">
       <div className="modal-content ">
          <div className="modal-header">

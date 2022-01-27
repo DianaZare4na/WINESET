@@ -6,9 +6,10 @@ export function Favorite({favorite}){
 
 	return(
 		<>
-		<div className="col-1 offset-4 div-hurt">
+		<div className="col-1 offset-4 div-hurt" data-toggle="modal" data-target="#FavoriteAll">
          <div className="favorite-length">
-            {favorite.length}
+            {/*{favorite.length}*/}
+            {favorite.length ? <span>{favorite.length}</span> : null}
          </div>
          <img src={hurt}/>
       </div>
