@@ -10,10 +10,10 @@ export function ProductCatalogItem ({product, putToBasket, putToFavorite}) {
             <span className="sr-only">Загрузка...</span>
       </div>
    );
-   const putFavorite = function () {
+   const putFavoritre = function(){
       putToFavorite(product)
-   }
-   const put = function () {
+   };
+   const put = function(){
       putToBasket(product)
    }
    
@@ -36,7 +36,7 @@ export function ProductCatalogItem ({product, putToBasket, putToFavorite}) {
             <p className="product-catalog-item-p product-catalog-item-p2">{product.grape}</p>
             <div className="product-catalog-item-span-p">
                <p className="p-price product-catalog-item-p-price">{product.price}</p>
-               <span onClick={putFavorite}><img src={hurt}/></span>
+               <span onClick={putFavoritre}><img src={hurt}/></span>
             </div>
             
          </div>

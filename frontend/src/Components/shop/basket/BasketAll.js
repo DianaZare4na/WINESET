@@ -52,7 +52,12 @@ export function BasketAll ({products, removeFromBasket}) {
                </div>
                </>
             ) : (
-                  <p>Ваша корзина пуста</p>
+               <div className="basket-aps">
+                  <div>
+                     <h3>Ваша корзина пуста</h3>
+                     <p>Но это никогда не поздно исправить :)</p>
+                  </div>
+               </div>
             )}
       </div>
       </div>

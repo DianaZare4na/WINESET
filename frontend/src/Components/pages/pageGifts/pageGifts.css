@@ -1,0 +1,50 @@
+.page-gifts-img img{
+   width: 100%;
+}
+a.page-gifts-set-wine{
+   color: #fff;
+   border-bottom: 1px solid #fff;
+}
+a.page-gifts-set-wine:hover{
+   text-decoration: none;
+   cursor: pointer;
+}
+.page-gifts-h2{
+   margin-top: 0;
+}
+.page-gifts-row2{
+   padding-top: 4%;
+   padding-bottom: 5%;
+   background-image: url("./img/bg.png");
+	background-repeat: no-repeat;
+	background-position: right 100%;
+	background-size: 33%;
+}
+.page-gifts-p{
+   font-size: .8vw;
+}
+.page-gifts-col-gif{
+   display: flex;
+   justify-content:space-between;
+}
+.page-gifts-col-gif div:nth-child(2){
+   margin-top: 9%;
+
+}
+.page-gifts-gif-div-img{
+   width: 100%;
+}
+.page-gifts-gif-div-img img{
+   width: 100%;
+}
+.page-gifts-gif-div-img-p{
+   padding-left: 4%;
+   padding-top: 0;
+   margin-top: -4%;
+}
+.page-gifts-div-delivery{
+   margin-top: 28.5%;
+}
+.page-gifts-row3{
+   padding-bottom: 5%;
+}

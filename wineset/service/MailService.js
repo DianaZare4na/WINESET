@@ -15,17 +15,17 @@ class MailService {
 	}
 
 
-	async sendMail(to, message) {
+	async sendMail(to, userName) {
 		await this.transporter.sendMail({
 			from: "f11_no-replay@ukr.net",
 			to,
-			subject: 'Тест nodemailer',
-			text: message,
+			subject: 'Интернет магазин WINE SET',
+			text: userName,
 			html:
 				`
 					<div>
-						<h1>${message}</h1>
-						 
+						<h1>Приветствуем, ${userName}!</h1>
+						<p>Спасибо за обращение!</p>
 					</div>
 				`
 		})

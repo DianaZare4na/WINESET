@@ -27,7 +27,7 @@ export function ProductCard (){
    };
    console.log(params);
    useEffect( () => {
-         fetch("http://localhost:3001/api/product/byid/" + params.id)
+         fetch("/api/product/byid/" + params.id)
                .then(res => {
                   console.log(res);
                   return res.json()})
@@ -47,10 +47,10 @@ export function ProductCard (){
             <span className="sr-only">Загрузка...</span>
       </div>
    );
-   let img = "http://localhost:3001" + product.image;
-   let img1 = "http://localhost:3001" + product.imageOne;
-   let img2 = "http://localhost:3001" + product.imageTwo;
-   let img3 = "http://localhost:3001" + product.imageThree;
+   let img = product.image;
+   let img1 = product.imageOne;
+   let img2 = product.imageTwo;
+   let img3 = product.imageThree;
    return (
 		<div className="row row-product">
 			<div className="col-5 offset-1"><h2 className="product-name">Вино {product.name}</h2></div>

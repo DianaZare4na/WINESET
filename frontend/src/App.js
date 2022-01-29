@@ -14,16 +14,19 @@ import PageGifts from "./Components/pages/pageGifts/pageGifts";
 import Delicacies from "./Components/pages/pageDelicacies";
 import GlassesAndCandles from "./Components/pages/pageGlassesAndCandles";
 import Storage from "./storage";
-import {ProductCatalog} from "./Components/shop/products/ProductCatalog";
+//import {ProductCatalog} from "./Components/shop/products/ProductCatalog";
 import {BasketWidget} from "./Components/shop/basket/BasketWidget";
 import {BasketAll} from "./Components/shop/basket/BasketAll";
 import {BasketBig} from "./Components/shop/basket/BasketBig";
 import {Favorite} from "./Components/shop/favorite/favorite";
+import {FavoriteAll} from "./Components/shop/favorite/FavoriteAll";
 import PageCheckout from "./Components/pages/pageCheckout/pageCheckout";
 import Instagram from "./Components/pages/instagram/Instagram";
 class App extends Storage {
 
-	
+	componentDidMount() {
+		this.fetchProducts();
+	}
 
 	render() {
 		return (
@@ -35,6 +38,9 @@ class App extends Storage {
 					<div className="row align-items-center row-top-menu">
 						<MenuTop></MenuTop>
                   <Favorite favorite={this.state.favorite}></Favorite>
+                  <FavoriteAll products={this.state.favorite}
+                        removeFromFavorite={this.removeFromFavorite.bind(this)}
+                  ></FavoriteAll>
                   <BasketWidget basket={this.state.basket}></BasketWidget>
                   <BasketAll products={this.state.basket}
                         removeFromBasket={this.removeFromBasket.bind(this)}

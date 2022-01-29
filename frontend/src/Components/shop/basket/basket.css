@@ -1,9 +1,14 @@
 .row-top-menu{
    position: relative;
 }
-.col-div-cart{
-   position: relative;
-}
+/*.row-basket-widget{
+   position: absolute;
+   z-index: 20;
+}*/
+/*.col-div-cart{
+   position: absolute;
+   top: 0;
+}*/
 .basket-length{
    position: absolute;
    display: flex;
@@ -106,4 +111,9 @@
 }
 .modal-backdrop {
    top: 14.2%;
+}
+.basket-aps{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

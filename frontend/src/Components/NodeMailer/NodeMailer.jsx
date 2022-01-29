@@ -11,6 +11,7 @@ export default class NodeMailer extends Component {
 			isLoaded: true,
 			mailer_body: {
 				mail: "",
+            userName: "",
 				message: "",
 			}
 		}
@@ -54,6 +55,7 @@ export default class NodeMailer extends Component {
 	renderData() {
 		return (
 			<>
+            <input type="text" name="userName" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Введите ваше имя..." maxlength="20" required/><br/>
 				<input type="email" name="mail" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Email" maxlength="50" required/><br/>
 				<textarea type="text" name="message" className="page-checkout-textarea" onChange={this.onChange.bind(this)} placeholder="Введите ваше сообщение"></textarea><br/>
 				<div className="btn-node-mailer">

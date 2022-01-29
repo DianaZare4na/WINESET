@@ -1,8 +1,13 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import {FavoriteItem} from "./FavoriteItem";
 
 export function FavoriteAll ({products, removeFromFavorite}) {
 
+   const close = () => {
+      document.getElementById("BasketAll").style.display = "none";
+      document.querySelector(".modal-backdrop").style.display = "none";
+   }
 
 
    return (

@@ -14,8 +14,6 @@ const Product = new Schema({
 	 country: String,
 	 sugar: String,
 	 manufacturer: String,
-	 
-	 
     //Атрибуты
     Value: Array,
 	 fortress: String,

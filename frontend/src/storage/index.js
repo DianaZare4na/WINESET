@@ -14,8 +14,9 @@ class Storage extends React.Component {
 
          if(localStorage.getItem("basket")){
             this.state.basket = JSON.parse(localStorage.getItem("basket"));
-         }else if(localStorage.getItem("favorite")){
-            this.state.favorite = JSON.parse(localStorage.getItem("favorite"));
+         }
+         else if(localStorage.getItem("favorite")){
+           this.state.favorite = JSON.parse(localStorage.getItem("favorite"));
          }
       }
       renderLoading(){
@@ -30,7 +31,7 @@ class Storage extends React.Component {
 
       // Загрузка данных с сервера
       fetchProducts(){
-      fetch("http://localhost:3001/api/product")
+      fetch("/api/product")
       .then(response => response.json())
       .then (products => {
             this.setState({
@@ -80,6 +81,7 @@ class Storage extends React.Component {
       this.setState({favorite: favorite});
       localStorage.setItem("favorite", JSON.stringify(favorite))
       }
+      
       // Проверить наличие в избранном
       inFavorite(product){
       if( this.state.favorite.find(product)  ) return true;
