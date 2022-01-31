@@ -12,7 +12,7 @@ export function Filter (){
     const [isLoad, setIsLoad] = useState(false);
 
     useEffect( () => {
-            fetch("/api/product/getfields/")
+            fetch("http://localhost:3001/api/product/getfields/")
                 .then(res => {
                     // console.log(res);
                     return res.json();

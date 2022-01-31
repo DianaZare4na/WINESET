@@ -31,7 +31,7 @@ class Storage extends React.Component {
 
       // Загрузка данных с сервера
       fetchProducts(){
-      fetch("/api/product")
+      fetch("http://localhost:3001/api/product")
       .then(response => response.json())
       .then (products => {
             this.setState({

@@ -22,6 +22,7 @@ import {Favorite} from "./Components/shop/favorite/favorite";
 import {FavoriteAll} from "./Components/shop/favorite/FavoriteAll";
 import PageCheckout from "./Components/pages/pageCheckout/pageCheckout";
 import Instagram from "./Components/pages/instagram/Instagram";
+
 class App extends Storage {
 
 	componentDidMount() {

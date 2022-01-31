@@ -18,7 +18,7 @@ function SearchBar() {
 	useEffect(() => {
 		//  console.log("Состояние_" + searchString);
       if (searchString.length < 2) return;
-		 fetch("/api/product/autocomplete?searchString=" + searchString)
+		 fetch("http://localhost:3001/api/product/autocomplete?searchString=" + searchString)
 			  .then(res => {
 			//   console.log(res);
 			  return res.json()})

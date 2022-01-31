@@ -1,10 +1,10 @@
 // TODO: подключить модель для сущности
-const model = require("../models/product");
+const product = require("../models/product");
 
 // Create => POST
 exports.post = function (request, response) {
     console.log("Run POST");
-    const element = new model(request.body);
+    const element = new product(request.body);
     element.save(function (err) {
         if (err) {
             console.log(err);
@@ -18,7 +18,7 @@ exports.post = function (request, response) {
 // Read => GET
 exports.get = function (request, response) {
     console.log("Run GET");
-    model.find({},
+    product.find({},
         function (err, allData ) {
             if (err){
                 console.log(err);
@@ -34,7 +34,7 @@ exports.get = function (request, response) {
 exports.getById = function (request, response) {
     let id = request.params.id;
     console.log("Run GET");
-    model.findById(id,
+    product.findById(id,
         function (err, allData ) {
             if (err){
                 console.log(err);
@@ -60,24 +60,49 @@ exports.delete = function (request, response) {
 
 exports.seed = function (request, response) {
     
-	 let wine = new model();
-	  wine.name = "Tenuta Argentiera Bolgheri Superiore";
-	  wine.vendor = "Tenuta";
-	  wine.slug = wine.name + wine.vendor; 
-	  wine.price = "2500";
-	  wine.WineType = "Вино красное сухое";
-	  wine.country = "Италия";
-	  wine.sugar = "Сухое";
-	  wine.manufacturer = "Tenuta argentiera";
-	  wine.Value = ["0.75", "1.5"];
-	  wine.fortress = "14,5%";
-	  wine.grape= "каберне совиньйон +";
-	  wine.image = "/storage/product/argentiera-prodotti-argentiera-2018 13.png";
-	  wine.imageOne = "/storage/product/pole1.png";
-	  wine.imageTwo = "/storage/product/pole2.png";
-	  wine.imageThree = "/storage/product/pole3.png";
-	  wine.save();
-    response.send("Ok");
+	 let wineRed = new product();
+    wineRed.name = "Tenuta Argentiera Bolgheri Superiore";
+    wineRed.vendor = "Tenuta";
+    wineRed.slug = wineRed.name + wineRed.vendor; 
+    wineRed.price = "2500";
+    wineRed.price_action = "1999";
+    wineRed.category = "wine";
+    wineRed.subCategory = "red";
+    wineRed.dess = "0.75";
+    wineRed.dessOne =  "Италия";
+    wineRed.desstwo = "14,5%";
+    wineRed.dessThree =  "Вино красное сухое";
+    wineRed.dessFour = "каберне совиньйон +";
+    wineRed.characteristics = [
+       {
+          name: "Страна, регион:",
+          meaning: "Италия",
+       },
+       {
+         name: "Вино:",
+         meaning: "Вино красное сухое",
+      },
+      {
+         name: "Сахар:",
+         meaning: "Сухое",
+      },
+      {
+         name: "Виноград:",
+         meaning: "каберне совиньйон +",
+      },
+      {
+         name: "Крепость:",
+         meaning: "14,5%",
+      },
+      {
+         name: "Объем:",
+         meaning: ["0.75", "1.5"],
+      },
+   ];
+   wineRed.image =["/storage/product/wine.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
+   wineRed.manufacturer = "Tenuta argentiera";
+   wineRed.save();
+   response.send("Ok");
 }
 
 
@@ -88,7 +113,7 @@ exports.autocomplete = function (request, response) {
         response.json([]);
         return;
     }
-    model.find({name: {$regex:searchString, "$options" : "-i" }},
+    product.find({model: {$regex:searchString, "$options" : "-i" }},
         function (err, allData ) {
             if (err){
                 console.log(err);
@@ -118,4 +143,48 @@ exports.getFilterFields = function (request, response){
 }
 exports.getByFields = function (request, response){
     response.send("okf");
+}
+
+exports.getByCategory = function (request, response) {
+   const categoryName = request.params.categoryName;
+   console.log("categoryName: " + categoryName);
+   product.find({category: categoryName},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+
+exports.getBySubCategory = function (request, response) {
+   const subCategoryName = request.params.subCategoryName;
+   console.log("categoryName: " + subCategoryName);
+   product.find({subCategory: subCategoryName},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+
+exports.getByRecommendedProducts = function (request, response) {
+   console.log("recommended products");
+   product.find({recommended: "recommended"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
 }

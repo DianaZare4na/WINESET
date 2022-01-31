@@ -8,6 +8,7 @@ import znak3 from "./img/znak3.png";
 import imgbg from "./img/winebgpr.png"
 import Count from "./Count";
 export function ProductCard (){
+
    let params = useParams();
 
    const [product, setProduct] = useState({});
@@ -27,7 +28,7 @@ export function ProductCard (){
    };
    console.log(params);
    useEffect( () => {
-         fetch("/api/product/byid/" + params.id)
+         fetch("http://localhost:3001/api/product/byid/" + params.id)
                .then(res => {
                   console.log(res);
                   return res.json()})
@@ -42,15 +43,15 @@ export function ProductCard (){
                   console.log(err))
       },
       [params]);
-   if (!isLoad) return (
-      <div className="spinner-border" role="status">
-            <span className="sr-only">Загрузка...</span>
-      </div>
+      if (!isLoad) return (
+         <div className="spinner-border" role="status">
+               <span className="sr-only">Загрузка...</span>
+         </div>
    );
-   let img = product.image;
-   let img1 = product.imageOne;
-   let img2 = product.imageTwo;
-   let img3 = product.imageThree;
+   let img = "http://localhost:3001" + product.image[0];
+   let img1 = "http://localhost:3001" + product.image[1];
+   let img2 = "http://localhost:3001" + product.image[2];
+   let img3 = "http://localhost:3001" + product.image[3];
    return (
 		<div className="row row-product">
 			<div className="col-5 offset-1"><h2 className="product-name">Вино {product.name}</h2></div>
@@ -80,20 +81,22 @@ export function ProductCard (){
                <div><img src={znak2}/></div>
                <div><img src={znak3}/></div>
             </li>
-            <li>Страна, регион: {product.country}</li>
-            <li>Вино: {product.WineType}</li>
-            <li>Сахар: {product.sugar}</li>
-            <li>Виноград: {product.grape}</li>
-            <li>Крепость: {product.fortress}</li>
-            <li>Объем: {product.Value[0]}</li>
-            <li><a>Смотреть все характеристики</a></li>
+            <li>
+               <ul>
+                  {
+                     product.characteristics.map( characteristic =>
+                        <li>{characteristic.name}{characteristic.meaning}</li>
+                     )
+                  }
+               </ul>
+            </li>
          </ul>
          
          <div className="col-4 col-div-bg-color">
             <div className="div-bg-color">
-               <p className="p-strike">7500грн.</p>
+               <p className="p-strike">{product.price ? product.price : product.price_action}</p>
                <div className="div-price">
-                  <p className="p-price">{product.price}грн.</p>
+                  <p className="p-price">{product.price_action ? product.price_action : product.price}грн.</p>
                   <div className="div-action">-15%</div>
                </div>
                <div className="div-count-buttons">

@@ -29,7 +29,7 @@ const TelegramBot = () => {
 			})
 	}
 	return(<>
-			<div className="telegramm-div">
+			<div className="telegramm-div" >
 				<form className="telegramm-form">
 				<h2 className="main-h2 telegramm-h2">связаться с нами</h2>
 					<div className="telegramm-form-div">

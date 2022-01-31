@@ -7,21 +7,20 @@ const Product = new Schema({
     name: String,
     slug: String, // Фрагмент строки для поисковой системы
     vendor: String,
-    image: String,
+    image: Array,
     price: Number,
+    price_action: Number,
+    recommended: String,
+    category: String,
+    subCategory: String,
+    dess: String,
+    dessOne: String,
+    desstwo: String,
+    dessThree: String,
+    dessFour: String,
     //Характеристики
-    WineType: String,
-	 country: String,
-	 sugar: String,
-	 manufacturer: String,
+    characteristics: Array,
     //Атрибуты
-    Value: Array,
-	 fortress: String,
-	 grape: String,
-	 imageOne: String,
-	 imageTwo: String,
-	 imageThree: String,
-	 
 });
 
 // Экспортируем модель нашего студента

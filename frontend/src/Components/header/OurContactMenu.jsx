@@ -5,6 +5,8 @@ import phone from "./img/phone.png";
 import inst from "./img/Vector.png";
 import tel from "./img/Vector1.png";
 import fac from "./img/Vector3.png";
+
+
 function OurContactMenu() {
 
 
@@ -27,7 +29,7 @@ function OurContactMenu() {
                </div>
                <div className="modal-body modal-body-our-contact">
                   <div className="modal-body-our-contact-div">
-                     <h3 className="modal-body-our-contact-h3">Адрес: <span>г. Москва, ул. Нарвская, 1а, к.2</span></h3>
+                     <h3 className="modal-body-our-contact-h3">Адрес: <span>г.Николаев, ул. Лягина 1</span></h3>
                      <h3 className="modal-body-our-contact-h3">Телефон: <span><a href="tel:+380681477386">+380681477386</a></span></h3>
                      <h3 className="modal-body-our-contact-h3">Email: <span><a href="mailto:dianazare4na00@gmail.com">dianazare4na00@gmail.com</a></span></h3>
                   </div>
