@@ -11,7 +11,7 @@ export  function BasketWidget ({basket}) {
             <div className="basket-length">
                   {basket.length ? <span>{basket.length}</span> : null}
                </div>
-               <img src={cart}/>
+               <div className=""></div><img src={cart}/>
             </div>
          </div>
       </>

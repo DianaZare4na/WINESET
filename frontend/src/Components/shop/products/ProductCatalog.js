@@ -11,7 +11,14 @@ export function ProductCatalog ({products, putToBasket, putToFavorite}) {
 
    return (
       <div className=" col-10 offset-1 product-catalog">
-         {products.map((p) => <ProductCatalogItem key={p.id} product={p} putToBasket={putToBasket} putToFavorite={putToFavorite} id="productGifts"/>)}
+         {products.map((p) => 
+         <ProductCatalogItem 
+            key={p.id} 
+            product={p} 
+            putToBasket={putToBasket} 
+            putToFavorite={putToFavorite} id="productGifts"
+         />
+         )}
       </div>
    );
 }

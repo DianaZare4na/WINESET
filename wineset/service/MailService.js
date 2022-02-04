@@ -12,19 +12,19 @@ class MailService {
 				pass: "iGfUcB7L9RDPCsL8"
 			}
 		})
-	}
+	}     
 
 
-	async sendMail(to, userName) {
+	async sendMail(to, message, useName) {
 		await this.transporter.sendMail({
 			from: "f11_no-replay@ukr.net",
 			to,
 			subject: 'Интернет магазин WINE SET',
-			text: userName,
+			text: message,
 			html:
 				`
 					<div>
-						<h1>Приветствуем, ${userName}!</h1>
+						<h1>Приветствуем, ${useName}!</h1>
 						<p>Спасибо за обращение!</p>
 					</div>
 				`

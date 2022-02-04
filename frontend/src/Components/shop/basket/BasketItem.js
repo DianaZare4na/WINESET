@@ -10,7 +10,7 @@ export function BasketItem ({product, removeFromBasket}) {
    return (
       <div className="div-basket-item">
          <div className="div-basket-item-img-count">
-            <div className="div-basket-item-img"><img src={product.image}/></div>
+            <div className="div-basket-item-img"><img src={product.image[0]}/></div>
             <div className="div-product-name-count">
                <div className="div-product-name">{product.name}</div>
                <div className="count-basket"><Count></Count></div>
@@ -18,7 +18,7 @@ export function BasketItem ({product, removeFromBasket}) {
          </div>
          <div>
             <div><span className="remove" onClick={remove}>&times;</span></div>
-            <p className="p-price-product">{product.price}</p>
+            <p className="p-price-product">{product.price_action ? product.price_action : product.price}грн.</p>
          </div>
       </div>
    );

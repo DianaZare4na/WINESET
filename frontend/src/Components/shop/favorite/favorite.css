@@ -16,3 +16,29 @@
    background-color: red;
    color: #fff;
 }
+
+@media (max-width: 767.98px){
+	.col-favorite{
+      padding-left: 11.5%;
+   }
+}
+@media (max-width: 575.98px) {
+	.col-favorite{
+      padding-left:15%;
+   }
+}
+@media (max-width: 460px) {
+	.col-favorite{
+      padding-left: 10%;
+   }
+}
+@media (max-width: 350px) {
+	.col-favorite{
+      padding-left: 7%;
+   }
+}
+@media (max-width: 320px) {
+	.col-favorite{
+      padding-left: 0;
+   }
+}

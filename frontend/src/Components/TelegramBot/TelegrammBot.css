@@ -57,55 +57,69 @@ div.telegramm-form-div-div button{
 }
 @media (max-width: 1199.98px) {
 	div.telegramm-form-div-div input{
-		font-size: 1vw;
+		font-size: 15px;
 	}
 	div.telegramm-form-div-div textarea{  
-		font-size: 1vw;
+		font-size: 15px;
 	}
 	.telegramm-h2{
-		font-size: 1.8vw;
+		font-size: 25px;
+	}
+   div.telegramm-form-div-div input{
+		font-size: 15px;
+	}
+	div.telegramm-form-div-div textarea{  
+		font-size: 15px;
 	}
 }
-@media (max-width: 767.98px) {
-	div.telegramm-form-div-div input{
-		font-size: 10px;
+@media (max-width: 991.98px){
+   .telegramm-h2{
+		font-size: 20px;
+	}
+   div.telegramm-form-div-div input{
+		font-size: 13.5px;
 	}
 	div.telegramm-form-div-div textarea{  
-		font-size: 10px;
-	}
-	.telegramm-h2{
-		font-size:  16px;
-	}
-	.telegramm-btn{
-		font-size: 1.8vw;
+		font-size: 13.5px;
 	}
 }
-@media (max-width: 470px) {
-	div.telegramm-form-div-div input{
-		font-size: 8px;
+@media (max-width: 767.98px){
+   .telegramm-div{
+      margin-bottom: 10%;
+      padding-bottom: 10%;
+   }
+   .telegramm-div-img{
+      display: none;
+   }
+   .telegramm-h2 {
+      margin-top: 10%;
+      margin-bottom: 7%;
+      font-size: 19px;
+   }
+}
+@media (max-width: 390.98px){
+   .telegramm-h2{
+		font-size: 17px;
+	}
+   div.telegramm-form-div-div input{
+		font-size: 11.5px;
 	}
 	div.telegramm-form-div-div textarea{  
-		font-size: 8px;
-		padding: 3.8% 0 23% 3.8%;
-	}
-	.telegramm-h2{
-		font-size:  11px;
-	}
-	.telegramm-btn{
-		font-size: 2vw;
+		font-size: 11.5px;
 	}
 }
-@media (max-width: 380px) {
-	div.telegramm-form-div-div input{
-		font-size: 6px;
+@media (max-width: 320.98px){
+   .telegramm-h2{
+		font-size: 16px;
+	}
+   div.telegramm-form-div-div input{
+		font-size: 11px;
 	}
 	div.telegramm-form-div-div textarea{  
-		font-size: 6px;
-		padding: 3.8% 0 23% 3.8%;
+		font-size: 11px;
 	}
-	.telegramm-h2{
-		font-size: 9px;
-		margin-top: 10%;
-		margin-bottom: 7%;
-	}
+   div.telegramm-form-div-div button {
+      width: 55%;
+      margin-left: 20%;
+    }
 }

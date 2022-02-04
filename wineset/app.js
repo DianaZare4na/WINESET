@@ -37,4 +37,10 @@ app.use('/api', apiBot);
 let apiMail = require('./routes/apiMailer');
 app.use('/api', apiMail);
 
+if (process.env.NODE_ENV === 'production') {
+   app.use(express.static(path.join(__dirname, 'public')));
+   app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+   });
+  }
 module.exports = app

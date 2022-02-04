@@ -15,12 +15,9 @@ import fir from "./img/fir.png";
 //import { BasketAll } from "../../shop/basket/BasketAll";
 //import { BasketWidget } from "../../shop/basket/BasketWidget";
 
-class PageGifts extends Storage{
-
-   componentDidMount() {
-		this.fetchProducts();
-	}
-   render(){
+function PageGifts({products, putToBasket, putToFavorite}){
+   
+   
       return(
          <>
             {/*<Favorite favorite={this.state.favorite}></Favorite>
@@ -110,16 +107,14 @@ class PageGifts extends Storage{
 			   </article>
             <div className="row">
                <ProductCatalog
-                     products={this.state.products}
-                     putToBasket={this.putToBasket.bind(this)}
-                     putToFavorite={this.putToFavorite.bind(this)}
+                     products={products}
+                     putToBasket={putToBasket}
+                     putToFavorite={putToFavorite}
                ></ProductCatalog>
             </div>
          </>
       )
    
    }
-	
-}
 export default PageGifts;
 

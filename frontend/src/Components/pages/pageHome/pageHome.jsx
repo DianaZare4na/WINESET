@@ -30,12 +30,12 @@ function PageHome(){
          <BasketOfDelicacies></BasketOfDelicacies>
          <Main></Main>
 			<article className="row no-gutters ">
-			<h2 className="main-h2 main-h2-1 col-6 offset-1">Корпоративным клиентам <br/> и партнерам</h2>
+			<h2 className="main-h2 main-h2-1 col-10 offset-1 col-sm-6 offset-sm-1  col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">Корпоративным клиентам <br/> и партнерам</h2>
 				<SimpleSlider></SimpleSlider>
 			</article>
 			<article className="row no-gutters article-bg-img">
             <Delivery></Delivery>
-				<section className="col-12 offset-0 telegramm-section col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2  col-xl-8 offset-xl-2">
+				<section className="col-10 offset-1 telegramm-section col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-lg-10 offset-lg-1  col-xl-8 offset-xl-2">
                <TelegramBot></TelegramBot>
             </section>
 				<section className="col-12">
@@ -43,7 +43,7 @@ function PageHome(){
 				</section>
 			</article>
 			<article className="row no-gutters ">
-			<h2 className="main-h2 main-h2-1 col-6 offset-1">подарочные корзины</h2>
+			<h2 className="main-h2 main-h2-1 h2-gift col-10 offset-1 col-sm-6 offset-sm-1  col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">подарочные корзины</h2>
 				<SimpleSliderGifts></SimpleSliderGifts>
 			</article>
 		</>

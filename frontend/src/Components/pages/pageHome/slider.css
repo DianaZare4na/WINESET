@@ -38,12 +38,12 @@
 }
 .special-offer{
 	font-family: "AlexBrush";
-	font-size: 2.8vw;
+	font-size: 50px;
 	text-align: center;
 }
 .glasses-сandles{
 	Text-transform: uppercase;
-	font-size: 2.9vw;
+	font-size: 56px;
 	text-align: center;
 }
 .bacground-div-text{
@@ -51,7 +51,7 @@
 	margin-right: 20%;
 }
 .set-wine{
-	font-size: 0.7vw;
+	font-size: 14px;
 	Text-transform: uppercase;
 	letter-spacing: 4px;
 	text-align: center;
@@ -70,9 +70,79 @@ ul.carousel-indicators {
 	background-color: #9D0000;
 }
 
-@media (min-width: 320px){
-	
-	}
+@media (max-width: 1400px){
+   .special-offer{
+      font-size: 42px;
+   }
+   .glasses-сandles{
+      font-size: 48px;
+   }
+   .set-wine{
+      font-size: 11px;
+   }
+}
+@media (max-width: 1199.98px){
+   .special-offer{
+      font-size: 35px;
+   }
+   .glasses-сandles{
+      font-size: 40px;
+   }
+   .set-wine{
+      font-size: 10px;
+   }
+}
+@media (max-width: 991.98px){
+   .special-offer{
+      font-size: 30px;
+      margin-bottom: -5px;
+   }
+   .glasses-сandles{
+      font-size: 35px;
+   }
+   .set-wine{
+      font-size: 10px;
+   }
+   .arr-div{
+      width: 72%;
+      height: 22%;
+   }
+}
+@media (max-width: 767.98px){
+   .special-offer{
+      font-size: 25px;
+   }
+   .glasses-сandles{
+      font-size: 30px;
+   }
+   .set-wine{
+      display: none;
+   }
+}
+@media (max-width: 575.98px) {
+	.special-offer{
+      font-size: 20px;
+   }
+   .glasses-сandles{
+      font-size: 22px;
+   }
+}
+@media (max-width: 406px) {
+	.special-offer{
+      font-size: 17px;
+   }
+   .glasses-сandles{
+      font-size: 19px;
+   }
+}
+@media (max-width: 320px) {
+	.special-offer{
+      font-size: 15px;
+   }
+   .glasses-сandles{
+      font-size: 16px;
+   }
+}
 	
 
 

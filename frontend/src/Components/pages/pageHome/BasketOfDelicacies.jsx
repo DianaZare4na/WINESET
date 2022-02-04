@@ -1,6 +1,5 @@
 import React from "react";
-import {useState} from "react";
-
+import {Link} from "react-router-dom";
 import './homeStyle.css';
 
 import frenchwine from "./img/frenchwine.png";
@@ -11,15 +10,6 @@ import arrWhite from "./img/arrWhite.png";
 
 function BasketOfDelicacies(){
    
-	const [isLoad, setIsLoad] = useState(true);
-	if (!isLoad) return (
-		<div className="d-flex justify-content-center">
-         <div className="spinner-border" role="status">
-            <span className="sr-only">Loading...</span>
-         </div>
-      </div>
-	);
-
 	return(
 		<>
 			<div className="row no-gutters">  
@@ -27,9 +17,11 @@ function BasketOfDelicacies(){
 					<img  className="img-bigger" src={bascetofdelicacies}/>
 					<div className="basket-of-delicacies-div img-after-slider-absolute">
 						<p className="basket-of-delicacies-p">BASKET OF DELICACIES</p>
-						<div className="arr-white-div">
+						<Link to="/delicacies">
+                  <div className="arr-white-div">
 							<img className="arr-white" src={arrWhite} alt="" />
 						</div>
+                  </Link>
 					</div>
 					</div></div></div>
 				<div className="col-12 after-slider-col col-sm-12 col-md-4 col-lg-4 col-xl-4"><div><div className="imgafterslider imgafterslidercenter2">

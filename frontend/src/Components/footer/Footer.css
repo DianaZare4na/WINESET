@@ -146,7 +146,6 @@
    .divulfooterthird{
       display: flex;
       justify-content: center;
-      /*flex-basis: 100%;*/
    }
    .divulfooterthird ul {
      width: 180px;

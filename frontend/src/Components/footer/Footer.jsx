@@ -9,6 +9,8 @@ import i from "./img/instagram.png";
 import tel from "./img/Vector.png";
 import loc from "./img/MapPin.png";
 
+import NodeMailer from '../NodeMailer/NodeMailer';
+
 function Footer(){
 
 	return(
@@ -41,7 +43,23 @@ function Footer(){
 						<a href="https://t.me/DianaZariechna"><img src={t} alt="telegramm"/></a>
 						<a href="https://www.instagram.com/dianazarechnaia/"><img src={i} alt="instagram"/></a>
 					</li>
-               <li><button className="btn btn-primary telegramm-btn">Связаться с нами</button></li>
+               <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NodeMailer">
+                  Связаться с нами
+                  </button>
+                  <div class="modal fade" id="NodeMailer" tabindex="-1" aria-labelledby="NodeMailerLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                     <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel">Связаться с нами</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                        <NodeMailer></NodeMailer>
+                     </div>
+                  </div>
+                  </div>
+               </li>
 				</ul>
 				
 			</div>

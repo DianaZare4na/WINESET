@@ -20,7 +20,7 @@ function OurContactMenu() {
 		</div>
       <div className="modal fade" id="dialogOurContactMenu" tabindex="-1" aria-labelledby="dialogOurContactMenuLabel" aria-hidden="true">
          <div className="modal-dialog modal-dialog-our-contect">
-            <div className="modal-content">
+            <div className="modal-content ">
                <div className="modal-header">
                   <h5 className="modal-title" id="dialogOurContactMenuLabel">Контакты</h5>
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close">

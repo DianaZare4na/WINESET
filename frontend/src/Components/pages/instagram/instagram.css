@@ -25,9 +25,19 @@
 	padding-bottom: 6%;
 }
 .set-wine-down{
-	margin-left: 28%;
 	border-bottom: 1px solid #fff;
 	color: #fff;
+   display: inline-block;
+}
+.set-wine-down:hover{
+	color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+}
+.div-set-wine-down{
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .instagram-main-h2{
    margin-top: 0;
@@ -57,4 +67,69 @@
 }
 .instagram-img-div{
    margin: 2px;
+}
+@media( max-width: 991.98px){
+   .special-offer-down {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    .instagram-div-delivery {
+      margin-bottom: 2%;
+      margin-top: 0;
+    }
+}
+@media( max-width: 767.98px){
+   .glasses-сandles-down {
+      font-size: 3vw;
+      padding-bottom: 0;
+    }
+    .row-inst{
+       margin-top: 4%;
+    }
+    .instagram-col{
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .instagram-img-div{
+      flex-basis: 48%;
+      margin-bottom: 3%
+    }
+    
+}
+@media(max-width: 575.98px){
+    .special-offer-down {
+       font-size: 20px;
+    }
+    .glasses-сandles-down {
+      font-size: 14px;
+      margin: 0;
+    }
+    .set-wine-down {
+      font-size: 8px;
+      margin-top: 5px;
+    }
+    .instagram-div-delivery-a{
+      width: 100%;
+   }
+}
+@media(max-width: 443.98px){
+   .div-set-wine-down{
+      display:none;
+   }
+}
+@media(max-width: 320.98px){
+   .special-offer-down {
+      font-size: 18px;
+   }
+   .glasses-сandles-down {
+     font-size: 13px;
+   }
+   .set-wine-down {
+     font-size: 8px;
+   }
+   .bacground-div-man{
+      justify-content: start;
+      padding-left: 10px;
+   }
+   
 }

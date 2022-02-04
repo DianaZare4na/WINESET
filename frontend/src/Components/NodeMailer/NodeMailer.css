@@ -1,9 +1,9 @@
 .node-mailer-input{
    border: none;
 	background-color:#F4F4F4;
-	font-size: .9vw;
-	padding: 2%;
-	margin-bottom: 2%;
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: 10px;
 	width: 100%;
 }
 .btn-node-mailer{
