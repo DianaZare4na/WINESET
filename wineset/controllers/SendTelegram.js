@@ -14,12 +14,11 @@ exports.post = function (request, response) {
 		.then(res => {
 			console.log(res);
 			response.send(res);
+         
 		})
 		.catch( err => {
 			console.log(err);
 			response.send(err);
 		});
-
-
-		response.send(request.body);
+      
 }

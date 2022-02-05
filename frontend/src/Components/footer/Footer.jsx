@@ -43,7 +43,8 @@ function Footer(){
 						<a href="https://t.me/DianaZariechna"><img src={t} alt="telegramm"/></a>
 						<a href="https://www.instagram.com/dianazarechnaia/"><img src={i} alt="instagram"/></a>
 					</li>
-               <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NodeMailer">
+               <li>
+                  <button type="button" class="btn btn-primary down-btn" data-toggle="modal" data-target="#NodeMailer">
                   Связаться с нами
                   </button>
                   <div class="modal fade" id="NodeMailer" tabindex="-1" aria-labelledby="NodeMailerLabel" aria-hidden="true">
@@ -52,10 +53,12 @@ function Footer(){
                      <div className="modal-header">
                         <h5 className="modal-title" id="exampleModalLabel">Связаться с нами</h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                           <span aria-hidden="true">&times;</span>
                         </button>
                      </div>
+                     <div className="modal-body modal-body-mailer">
                         <NodeMailer></NodeMailer>
+                     </div>
                      </div>
                   </div>
                   </div>

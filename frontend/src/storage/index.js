@@ -15,8 +15,8 @@ class Storage extends React.Component {
          if(localStorage.getItem("basket")){
             this.state.basket = JSON.parse(localStorage.getItem("basket"));
          }
-         else if(localStorage.getItem("favorite")){
-           this.state.favorite = JSON.parse(localStorage.getItem("favorite"));
+         if(localStorage.getItem("favorite")){
+            this.state.favorite = JSON.parse(localStorage.getItem("favorite"));
          }
       }
       renderLoading(){

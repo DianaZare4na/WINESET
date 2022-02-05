@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 import './slider.css';
 import './homeStyle.css';
@@ -11,11 +11,13 @@ import SimpleSlider from "./sliderSlick";
 import Delivery from "./Delivery";
 import TelegramBot from "../../TelegramBot/TelegramBot";
 import SimpleSliderGifts from "./sliderSlickGifts";
-
+//import Age from "../../../age/age";
+//import ShowModal from "../../modals/showModal";
 function PageHome(){
 
 	const [isLoad, setIsLoad] = useState(true);
-   
+
+   //const [showAlert, setShowAlert] = useState(<Age/>);
 	if (!isLoad) return (
 		<div className="d-flex justify-content-center">
          <div className="spinner-border" role="status">
@@ -23,9 +25,9 @@ function PageHome(){
          </div>
       </div>
 	);
-
 	return(
 		<>
+         {/*<Age/>*/}
 			<Slider></Slider>
          <BasketOfDelicacies></BasketOfDelicacies>
          <Main></Main>

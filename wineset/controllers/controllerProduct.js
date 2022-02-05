@@ -113,7 +113,7 @@ exports.autocomplete = function (request, response) {
         response.json([]);
         return;
     }
-    product.find({model: {$regex:searchString, "$options" : "-i" }},
+    product.find({name: {$regex:searchString, "$options" : "-i" }},
         function (err, allData ) {
             if (err){
                 console.log(err);

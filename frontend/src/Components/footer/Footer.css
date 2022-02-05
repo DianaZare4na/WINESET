@@ -5,6 +5,7 @@
 	padding-top: 6%;
    font-size: 16px;
 }
+
 .logoimgfooter div img{
 	width: 100%;
 }  
@@ -151,7 +152,7 @@
      width: 180px;
       margin-top: 5%;
    }
-   .divulfooterthird ul li button {
+   .divulfooterthird ul li button.down-btn {
       width: 100%;
    }
    .divulfooterthird ul li:nth-child(1){

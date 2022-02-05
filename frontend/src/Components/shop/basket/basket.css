@@ -1,18 +1,21 @@
-.row-top-menu{
+.cart{
    position: relative;
+   width: 35px;
+   cursor: pointer;
 }
 .basket-length{
    position: absolute;
    display: flex;
    justify-content: center;
    align-items: center;
-   left: 25%;
-   top: -7%;
-   padding: 0 2.8%;
+   right: 0;
+   top: -3px;
+   padding: 0 14%;
    border-radius: 50%;
    font-size: 9px;
    background-color: red;
    color: #fff;
+   z-index: 10;
 }
 .div-basket-item{
    display: flex;

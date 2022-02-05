@@ -1,5 +1,10 @@
-.div-hurt{
-	display: flex;
+.hurt{
+   position: relative;
+   width: 35px;
+   cursor: pointer;
+}
+.col-favorite{
+   display: flex;
 	justify-content: end;
    position: relative;
 }
@@ -8,13 +13,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   right: 5%;
-   top: -25%;
-   padding:  0 2.8%;
+   right: 2px;
+   top: -5px;
+   padding: 0 15%;
    border-radius: 50%;
    font-size: 9px;
    background-color: red;
    color: #fff;
+   z-index: 10;
 }
 
 @media (max-width: 767.98px){

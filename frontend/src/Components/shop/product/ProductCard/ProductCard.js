@@ -7,25 +7,13 @@ import znak2 from "./img/znak2.png";
 import znak3 from "./img/znak3.png";
 import imgbg from "./img/winebgpr.png"
 import Count from "./Count";
-export function ProductCard (){
+export function ProductCard ({handleIncrement, handleDecrement }){
 
    let params = useParams();
 
    const [product, setProduct] = useState({});
    const [isLoad, setIsLoad] = useState(false);
 
-   const [count, setCount] = useState(0);
-
-   const handleIncrement = () => {
-      setCount(prevCount => prevCount + 1);
-   };
-
-   const handleDecrement = () => {
-      setCount(prevCount => prevCount - 1);
-      if(setCount(0)){
-         return;
-      }
-   };
    console.log(params);
    useEffect( () => {
          fetch("http://localhost:3001/api/product/byid/" + params.id)
@@ -100,7 +88,7 @@ export function ProductCard (){
                   <div className="div-action">-15%</div>
                </div>
                <div className="div-count-buttons">
-                  <Count count={count}></Count>
+                  <Count handleIncrement={handleIncrement} handleDecrement={handleDecrement}></Count>
                   <div><button className="btn btn-put-cart">В корзину</button></div>
                </div>
                <div className="div-betters">

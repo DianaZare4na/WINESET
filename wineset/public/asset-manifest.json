@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1d22d4f.chunk.css",
-    "main.js": "/static/js/main.497d4154.chunk.js",
-    "main.js.map": "/static/js/main.497d4154.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f4461851.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f4461851.js.map",
+    "main.css": "/static/css/main.8af90b7e.chunk.css",
+    "main.js": "/static/js/main.dd0c78df.chunk.js",
+    "main.js.map": "/static/js/main.dd0c78df.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.54e9e665.js",
+    "runtime-main.js.map": "/static/js/runtime-main.54e9e665.js.map",
     "static/css/2.165ff965.chunk.css": "/static/css/2.165ff965.chunk.css",
-    "static/js/2.e7ffb407.chunk.js": "/static/js/2.e7ffb407.chunk.js",
-    "static/js/2.e7ffb407.chunk.js.map": "/static/js/2.e7ffb407.chunk.js.map",
-    "static/js/3.5882510e.chunk.js": "/static/js/3.5882510e.chunk.js",
-    "static/js/3.5882510e.chunk.js.map": "/static/js/3.5882510e.chunk.js.map",
+    "static/js/2.dc6ad331.chunk.js": "/static/js/2.dc6ad331.chunk.js",
+    "static/js/2.dc6ad331.chunk.js.map": "/static/js/2.dc6ad331.chunk.js.map",
+    "static/js/3.d9974320.chunk.js": "/static/js/3.d9974320.chunk.js",
+    "static/js/3.d9974320.chunk.js.map": "/static/js/3.d9974320.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.165ff965.chunk.css.map": "/static/css/2.165ff965.chunk.css.map",
-    "static/css/main.e1d22d4f.chunk.css.map": "/static/css/main.e1d22d4f.chunk.css.map",
-    "static/js/2.e7ffb407.chunk.js.LICENSE.txt": "/static/js/2.e7ffb407.chunk.js.LICENSE.txt",
+    "static/css/main.8af90b7e.chunk.css.map": "/static/css/main.8af90b7e.chunk.css.map",
+    "static/js/2.dc6ad331.chunk.js.LICENSE.txt": "/static/js/2.dc6ad331.chunk.js.LICENSE.txt",
     "static/media/1.caeae98a.png": "/static/media/1.caeae98a.png",
     "static/media/2.5019abf3.png": "/static/media/2.5019abf3.png",
     "static/media/3.d4d31562.png": "/static/media/3.d4d31562.png",
@@ -22,7 +22,7 @@
     "static/media/productcard.css": "/static/media/Group.263fa143.png",
     "static/media/aboutShop.ad308a70.png": "/static/media/aboutShop.ad308a70.png",
     "static/media/aboutSome.78c90405.png": "/static/media/aboutSome.78c90405.png",
-    "static/media/sliderSlick.css": "/static/media/arrrow_r.44488efc.png",
+    "static/media/sliderSlickGifts.css": "/static/media/arrrow_r.44488efc.png",
     "static/media/bascetofdelicacies.5c8c60cd.png": "/static/media/bascetofdelicacies.5c8c60cd.png",
     "static/media/pageGifts.css": "/static/media/bg.77baae98.png",
     "static/media/TelegrammBot.css": "/static/media/bgForm.374d8750.png",
@@ -50,10 +50,10 @@
     "static/media/winebgpr.63abba28.png": "/static/media/winebgpr.63abba28.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4461851.js",
+    "static/js/runtime-main.54e9e665.js",
     "static/css/2.165ff965.chunk.css",
-    "static/js/2.e7ffb407.chunk.js",
-    "static/css/main.e1d22d4f.chunk.css",
-    "static/js/main.497d4154.chunk.js"
+    "static/js/2.dc6ad331.chunk.js",
+    "static/css/main.8af90b7e.chunk.css",
+    "static/js/main.dd0c78df.chunk.js"
   ]
 }

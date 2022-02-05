@@ -22,13 +22,14 @@ import { Favorite } from "./Components/shop/favorite/favorite";
 import { FavoriteAll } from "./Components/shop/favorite/FavoriteAll";
 import PageCheckout from "./Components/pages/pageCheckout/pageCheckout";
 import Instagram from "./Components/pages/instagram/Instagram";
-
+import Age from "./age/age";
 class App extends Storage {
 
    componentDidMount() {
       this.fetchProducts();
-   }
 
+   }
+   
    render() {
       return (
          <BrowserRouter>
@@ -36,6 +37,7 @@ class App extends Storage {
                <header className="row bag align-items-center">
                   <Header></Header>
                </header>
+               
                <div className="row align-items-center row-top-menu">
                   <MenuTop></MenuTop>
                   <Favorite favorite={this.state.favorite}></Favorite>
@@ -49,6 +51,7 @@ class App extends Storage {
                   ></BasketAll>
                </div>
                {/* <Filter></Filter> */}
+
                <Routes>
                   <Route path="/product/:slug/:id" element={<ProductCard />} />
                   <Route path="/" element={<PageHome />} />

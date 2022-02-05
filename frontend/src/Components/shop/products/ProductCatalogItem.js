@@ -16,6 +16,7 @@ export function ProductCatalogItem ({product, putToBasket, putToFavorite}) {
    const put = function(){
       putToBasket(product)
    }
+   
 
    return (
       <div className="product-catalog-item">
