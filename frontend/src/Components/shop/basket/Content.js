@@ -8,7 +8,7 @@ export default function Content() {
     const [cartItems, setCartItems] = useState([]);
     const [cartShow, setCartShow] = useState(false); // модальное окно
     // для показа сообщения после добавления в корзину
-    const [showAlert, setShowAlert] = useState(null);
+    const [showAlert, setShowAlert] = useState(null);  
 
     const appendToCart = (item, quantity = 1) => {
         // нужно проверить, нет ли уже такого товара в корзине
@@ -24,11 +24,11 @@ export default function Content() {
                 ...cartItems[itemIndex],
                 quantity: cartItems[itemIndex].quantity + quantity
             };
-            const newCart = cartItems.slice(); // копия массива cartItems
+            const newCart = cartItems.slice(); // копия массива cartItems  
             newCart.splice(itemIndex, 1, newItem);
             setCartItems(newCart);
         }
-        setShowAlert(item.name + ' добавлен в корзину');
+        setShowAlert(item.name + ' добавлен в корзину');   
     };
 
     const removeFromCart = (id) => {

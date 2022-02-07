@@ -14,6 +14,7 @@ export function BasketItem ({product, removeFromBasket}) {
             <div className="div-product-name-count">
                <div className="div-product-name">{product.name}</div>
                <div className="count-basket"><Count></Count></div>
+                  {/*<i>${prod.cnt} шт.</i>*/}
             </div>
          </div>
          <div>

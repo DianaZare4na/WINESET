@@ -1,24 +1,28 @@
 import './productCatalogItem.css';
 import React, {useState} from 'react';
 import hurt from "./img/Vector.png";
+import Modalfavorite from '../../modals/modalfavorite';
+import ShowModal from "../../modals/showModal"
+import ModalBasket from '../../modals/modalBasket';
 export function ProductCatalogItem ({product, putToBasket, putToFavorite}) {
 
-   const [isLoad, setIsLoad] = useState(true);
+   const [showAlert, setShowAlert] = useState(null);
+   const [showModalFavorite, setShowModalfavorite] = useState(null);
 
-   if (!isLoad) return (
-      <div className="spinner-border" role="status">
-            <span className="sr-only">Загрузка...</span>
-      </div>
-   );
    const putFavoritre = function(){
       putToFavorite(product)
-   };
+      setShowModalfavorite(<Modalfavorite product={product}/>)
+   };  
    const put = function(){
       putToBasket(product)
+      setShowAlert(<ModalBasket product={product}/>);
    }
+   const hideAlert = () => setShowModalfavorite(null);
    
-
    return (
+      <>
+      {showAlert}
+      {showModalFavorite && <ShowModal text={showModalFavorite} hideAlert={hideAlert} />}
       <div className="product-catalog-item">
          <div className="product-catalog-item-content">
             <div className="product-catalog-item-bg-im">
@@ -38,10 +42,9 @@ export function ProductCatalogItem ({product, putToBasket, putToFavorite}) {
                <p className="p-price product-catalog-item-p-price">{product.price}</p>
                <span onClick={putFavoritre}><img src={hurt}/></span>
             </div>
-            
          </div>
-         <button className="btn btn-primary product-catalog-item-btn"  onClick={put}>Купить</button>
+         <button type="button" className="btn btn-primary product-catalog-item-btn"  onClick={put}>Купить</button>
       </div>
-
+   </>
    )
 }

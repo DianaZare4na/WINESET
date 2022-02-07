@@ -28,7 +28,6 @@ class Storage extends React.Component {
                </div>
          )
       }
-
       // Загрузка данных с сервера
       fetchProducts(){
       fetch("http://localhost:3001/api/product")
@@ -52,6 +51,7 @@ class Storage extends React.Component {
          this.setState({basket: basket});
          localStorage.setItem("basket", JSON.stringify(basket))
       }
+      
 
       removeFromBasket(product){
          const basket = this.state.basket;

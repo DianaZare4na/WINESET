@@ -65,9 +65,9 @@ textarea:focus{
 .active-link{
    color: red;
 }
-.modal-backdrop{
+/*.modal-backdrop{
    top: 139px;
-}
+}*/
 .modal-dialog {
    margin-top: 84px;
 }

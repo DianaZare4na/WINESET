@@ -18,6 +18,7 @@
    /*transform: scale(1);*/
    opacity: 1;
    pointer-events: all;
+   position: relative;
 }
 .modal-content-age{
    box-shadow:-1px 1px 10px 3px rgba(34, 60, 80, 0.19) inset;
@@ -44,7 +45,7 @@
 	font-size: 18px;
    padding: 2.5% 9%;
    color: #fff;
-	background-color: #630101;
+	background: linear-gradient(92.96deg, #7A0000 0%, #990000 100%);
 }
 .modal-content-age-div-h2{
    font-size: 1.9vw;

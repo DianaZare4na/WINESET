@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from "react";
+
 import './TelegrammBot.css';
+
 import wineGlass from "../pages/pageHome/img/winGlass.png";
-//import ShowAlert from "../../Components/shop/basket/ShowAlert";
-import ShowModal from "../modals/showModal"
+import ShowModal from "../modals/showModal";
 import ModalTelegramm from "../modals/modalTelegramm";
 
 const TelegramBot = () => {
+   
 	const [body, setBody] = useState("");
 	const [name, setName] = useState("");
 	const [tel, setTel] = useState("");
@@ -84,6 +86,7 @@ const TelegramBot = () => {
    const hideAlert = () => setShowAlert(null);
 
 	return(<>
+         
 			<div className="telegramm-div" >
 				<form className="telegramm-form">
 				<h2 className="main-h2 telegramm-h2">связаться с нами</h2>

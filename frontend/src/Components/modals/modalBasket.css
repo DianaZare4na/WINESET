@@ -1,0 +1,125 @@
+.modal-favorite{
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.4);
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 200;
+   opacity: 1;
+   transition: .5s;
+}
+.modal-content-basket-favorite{
+   box-shadow:-1px 1px 10px 3px rgba(34, 60, 80, 0.19) inset;
+   background-color: #fff;
+}
+.modal-basket{
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.4);
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 200;
+   opacity: 0;
+   pointer-events: none;
+   transition: .5s;
+}
+.modal-basket.active{
+   opacity: 1;
+   pointer-events: all;
+}
+.modal-content-basket{
+   box-shadow:-1px 1px 10px 3px rgba(34, 60, 80, 0.19) inset;
+   background-color: #fff;
+   width: 614px;
+   height: 326px;
+}
+.render-modal-basket-header{
+   position: relative;
+   height: 66px;
+   width: 100%;
+   background-color: #121212;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.render-modal-basket-header-close{
+   text-align: center;
+   position: absolute;
+   right: 20px;
+   top: 0;
+   z-index: 26;
+   font-size: 30px;
+   height: 100%;
+   color: #fff;
+   border: none;
+   background-color: #121212;
+}
+.render-modal-basket-body{
+   padding: 5%;
+   display: flex;
+   flex-direction: column;
+}
+.render-modal-basket-p{
+   font-size: 24px;
+   text-align: center;
+   padding-top: 2%;
+}
+.render-modal-basket-p span{
+   font-weight: 600;
+}
+.foote-buttons{
+   padding-top: 8%;
+   display: flex;
+   justify-content: space-evenly;
+}
+.foote-buttons button{
+   border: none;
+   border-radius: 3px;
+   font-size: 16px;
+   font-family: "InterSamy";
+   padding: 2.2% 0 ;
+   width: 40%;
+}
+.foote-buttons-in-basket{
+   border: 1px solid #7A0000 !important;
+   color: #7A0000;
+   background-color: #fff;
+
+}
+.foote-buttons-in-checkout{
+   color: #fff;
+   background: linear-gradient(92.96deg, #7A0000 0%, #990000 100%);
+}
+@media(max-width: 767.98px){
+   .modal-content-basket{
+      width: 500px;
+      height: 270px;
+   }
+   .render-modal-basket-p{
+      font-size: 18px;
+   }
+}
+@media(max-width: 575.98px){
+   .modal-content-basket{
+      width: 310px;
+      height: 210px;
+   }
+   .render-modal-basket-p{
+      font-size: 14px;
+   }
+   .foote-buttons button{
+      font-size: 10px;
+   }
+   .render-modal-basket-body{
+      padding: 0;
+   }
+}

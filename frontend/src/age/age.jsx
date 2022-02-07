@@ -16,7 +16,7 @@ const Age = () => {
                </div>
             </div>
          </div>
-      </>
+      </>   
    )
 }
 export default Age;

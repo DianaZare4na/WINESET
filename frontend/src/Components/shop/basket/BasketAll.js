@@ -4,14 +4,14 @@ import {Link} from "react-router-dom";
 import {BasketItem} from "./BasketItem";
 
 export function BasketAll ({products, removeFromBasket}) {
-   const [isLoad, setIsLoad] = useState(true);
-	if (!isLoad) return (
-		<div className="d-flex justify-content-center">
-         <div className="spinner-border" role="status">
-            <span className="sr-only">Loading...</span>
-         </div>
-      </div>
-	);
+   //const [isLoad, setIsLoad] = useState(true);
+	//if (!isLoad) return (
+	//	<div className="d-flex justify-content-center">
+   //      <div className="spinner-border" role="status">
+   //         <span className="sr-only">Loading...</span>
+   //      </div>
+   //   </div>
+	//);
 
    const close = () => {
       document.getElementById("BasketAll").style.display = "none";
