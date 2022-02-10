@@ -8,7 +8,7 @@
 	font-weight: normal;
 	width: 89%;
 	position: absolute;
-	z-index: 10;
+	z-index: 100;
 }
 .ulautocompletecollection li a{
 	color: #000;
@@ -20,4 +20,36 @@
 }
 .ulautocompletecollection li{
 	margin: 10px;
+}
+@media (max-width: 1199.98px){
+   .ulautocompletecollection{
+      font-size: 15px;
+   }
+}
+@media (max-width: 991.98px){
+   .ulautocompletecollection{
+      font-size: 14px;
+      width: 100%;
+   }
+   .ulautocompletecollection li{
+      margin: 5px;
+   }
+}
+@media (max-width: 701.98px){
+   .ulautocompletecollection{
+      width: 120%;
+   }
+}
+@media (max-width: 575.98px){
+   .ulautocompletecollection{
+      font-size: 12px;
+      width: 115%;
+      left: -18%;
+   }
+}
+@media (max-width: 400.98px){
+   .ulautocompletecollection{
+      width: 140%;
+      left: -45%;
+   }
 }

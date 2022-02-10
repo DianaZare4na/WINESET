@@ -19,6 +19,7 @@ class Storage extends React.Component {
             this.state.favorite = JSON.parse(localStorage.getItem("favorite"));
          }
       }
+      
       renderLoading(){
          return (
                <div className="d-flex justify-content-center">
@@ -30,7 +31,7 @@ class Storage extends React.Component {
       }
       // Загрузка данных с сервера
       fetchProducts(){
-      fetch("http://localhost:3001/api/product")
+      fetch("/api/product")
       .then(response => response.json())
       .then (products => {
             this.setState({
@@ -43,14 +44,40 @@ class Storage extends React.Component {
       });
       }
 
-
-      // Положить в корзину
+       //Положить в корзину
       putToBasket(product){
          const basket = this.state.basket;
          basket.push(product);
          this.setState({basket: basket});
          localStorage.setItem("basket", JSON.stringify(basket))
       }
+
+
+   //   putToBasket(product, changeCount = 1){ // Если 0 -удалить
+   //      const basket = this.state.basket;
+ 
+   //          if (basket.find(b => b.product === product)) {
+   //              let index = basket.findIndex(b => b.product === product);
+   //              basket[index].count += changeCount;
+   //              if (basket[index].count === 0 || changeCount ===0 ){
+   //                  basket.splice(index,1);
+   //              }
+   //          } else {
+   //              basket.push({
+   //                  product: product,
+   //                  count: changeCount
+   //              })
+   //          }
+ 
+   //       basket.push(product);
+   //      this.setState({basket: basket});
+   //      try {
+   //          localStorage.setItem("basket", JSON.stringify(basket));
+   //      } catch (e) {
+   //          console.log(e)
+   //      }
+   //      return true;
+   //  }
       
 
       removeFromBasket(product){

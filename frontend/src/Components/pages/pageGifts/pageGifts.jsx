@@ -43,13 +43,13 @@ function PageGifts({products, putToBasket, putToFavorite}){
 				</section>
 			   </article>
             <article className="row no-gutters page-gifts-row2">
-               <h2 className="main-h2 page-gifts-h2 col-4 offset-1">подарочные корзины</h2>
-               <section className="col-2 offset-1">
+               <h2 className="main-h2 page-gifts-h2 col-10 offset-1 col-sm-10 offset-sm-1  col-md-4 offset-md-1 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">подарочные корзины</h2>
+               <section className="col-10 offset-1 col-4 offset-1 col-sm-4 offset-sm-1  col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-xl-2 offset-xl-1">
                   <p className="page-gifts-p">Форма чаши каждого бокала уникальна,
                   благодаря этому вы можете ощутить самые тонкие нюансы вкуса
                   своих любимых напитков.</p>
 				   </section>
-               <section className="col-2 offset-1">
+               <section className="col-10 offset-1 col-4 offset-1 col-sm-4 offset-sm-1  col-md-2 offset-md-1 col-lg-2 offset-lg-1 col-xl-2 offset-xl-1">
                   <p className="page-gifts-p">Бокалы вы можете приобрести как отдельно,
                   так и в красивой подарочной упаковке.</p>
 				   </section>
@@ -77,13 +77,13 @@ function PageGifts({products, putToBasket, putToFavorite}){
             <article className="row no-gutters page-gifts-row3">
 				   <h2 className="col-1 offset-1 main-h2 page-gifts-h2">Свечи</h2>
                <section className="w-100"></section>
-               <section className="col-4 offset-1">
+               <section className="col-10 offset-1 col-sm-10 offset-sm-1  col-md-4 offset-md-1 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
                   <div className="page-gifts-gif-div-img">
                      <img src={fir}/>
                   </div>
                </section>
-               <section className="col-2 offset-1">
-               <p className="page-gifts-p">Lorem ipsum dolor sit amet,
+               <section className="col-10 offset-1 col-sm-10 offset-sm-1  col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-2 offset-xl-1">
+               <p className="page-gifts-p-candel page-gifts-p-candel-1">Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -92,8 +92,8 @@ function PageGifts({products, putToBasket, putToFavorite}){
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                   officia deserunt mollit anim id est laborum.</p>
 				   </section>
-               <section className="col-2 offset-1">
-                  <p className="page-gifts-p">Lorem ipsum dolor sit amet, consectetur
+               <section className="page-gifts-p-candel-section-two col-10 offset-1 col-sm-10 offset-sm-1  col-md-5 offset-md-6 col-lg-5 offset-lg-6 col-xl-2 offset-xl-1">
+                  <p className="page-gifts-p-candel page-gifts-p-candel-2">Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                   ullamco labo</p>

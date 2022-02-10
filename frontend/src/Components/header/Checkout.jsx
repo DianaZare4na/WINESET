@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./Checkout.css";
 import NodeMailer from "../NodeMailer/NodeMailer";
@@ -14,7 +14,7 @@ function Checkout() {
 		</button>
 		
 		
-		<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div className="modal-dialog">
 			<div className="modal-content">
 				<div className="modal-header">

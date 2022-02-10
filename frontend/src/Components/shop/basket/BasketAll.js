@@ -4,22 +4,14 @@ import {Link} from "react-router-dom";
 import {BasketItem} from "./BasketItem";
 
 export function BasketAll ({products, removeFromBasket}) {
-   //const [isLoad, setIsLoad] = useState(true);
-	//if (!isLoad) return (
-	//	<div className="d-flex justify-content-center">
-   //      <div className="spinner-border" role="status">
-   //         <span className="sr-only">Loading...</span>
-   //      </div>
-   //   </div>
-	//);
-
+   
    const close = () => {
       document.getElementById("BasketAll").style.display = "none";
       document.querySelector(".modal-backdrop").style.display = "none";
    }
    return (
    
-      <div className="modal fade" id="BasketAll" tabindex="-1" aria-labelledby="BasketAllLabel" aria-hidden="true">
+      <div className="modal fade" id="BasketAll"  tabIndex={-1} aria-labelledby="BasketAllLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-basket">
       <div className="modal-content ">
          <div className="modal-header">
@@ -32,7 +24,7 @@ export function BasketAll ({products, removeFromBasket}) {
             <>
                   <div className="modal-body modal-body-basket" id="productMap">
                   <div>
-                     {products.map((p) => <BasketItem key={p.id} product={p} removeFromBasket={removeFromBasket} />)}
+                     {products.map((p) => <BasketItem key={p.id} product={p} removeFromBasket={removeFromBasket}/>)}
                   </div>
                </div>
                <div className="modal-footer modal-futer-div">
@@ -43,7 +35,7 @@ export function BasketAll ({products, removeFromBasket}) {
                         <p>Важная и не очень информация по поводу доставки</p>
                      </div>
                      <div className="all-price">
-                        9000
+                        850грн.
                      </div>
                   </div>
                   <div className="basket-btn-div">

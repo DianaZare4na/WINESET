@@ -8,7 +8,7 @@ export function AutocompleteItem (props){
     if (props.item.slug !== undefined && props.item.slug !== null)
         slug = props.item.slug;
     else {
-        slug = encodeURI(props.item.name +"_" + props.item.vendor);
+        slug = encodeURI(props.item.name +"_"+ props.item.vendor);
     }
 
     // Построенная ссылка

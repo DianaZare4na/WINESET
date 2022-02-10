@@ -59,480 +59,195 @@ exports.delete = function (request, response) {
 
 
 exports.seed = function (request, response) {
-    
-
-   let winef = new product();
-   winef.name = "Trevisana Prosecco Frizzante";
-   winef.vendor = "Trevisana";
-   winef.slug = winef.name + winef.vendor; 
-   winef.price = "270";
-   winef.price_action = "169";
-   winef.category = "wine";
-   winef.subCategory = "sparkling";
-   winef.dess = "0.75";
-   winef.dessOne =  "Италия";
-   winef.desstwo = "11%";
-   winef.dessThree =  "Вино игристое";
-   winef.dessFour = "каберне совиньйон";
-   winef.characteristics = [
+   delicacies_jamon1.name = "Serrano Duroc Gran Reserva на кости";
+   delicacies_jamon1.vendor = "Хамон Torre De Nuñez";
+   delicacies_jamon1.slug = delicacies_jamon1.name + delicacies_jamon1.vendor; 
+   delicacies_jamon1.price = "2200";
+   delicacies_jamon1.price_action = "1899";
+   delicacies_jamon1.category = "delicacies";
+   delicacies_jamon1.subCategory = "jamon";
+   delicacies_jamon1.dess = "Деликатесы";
+   delicacies_jamon1.dessOne =  "Хамон";
+   delicacies_jamon1.desstwo = "Испания";
+   delicacies_jamon1.dessThree =  "4.5 кг";
+   delicacies_jamon1.dessFour = "Свинина";
+   delicacies_jamon1.characteristics = [
+      {
+         name: "Вид: ",
+         meaning: "Хамон",
+      },
        {
-          name: "Страна, регион:",
-          meaning: "Италия",
+          name: "Тип мяса: ",
+          meaning: "Свинина",
        },
        {
-         name: "Вино:",
-         meaning: "белое экстра-сухое",
+         name: "Вес, кг: ",
+         meaning: "4.5",
       },
       {
-         name: "Сахар:",
-         meaning: "Сухое",
+         name: "Страна-производитель товара: ",
+         meaning: "Испания",
       },
       {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
+         name: "Срок хранения: ",
+         meaning: "365 дней",
       },
    ];
-   winef.image =["/storage/product/wine1.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   winef.manufacturer = "Trevisana";
-   winef.save();
+   delicacies_jamon1.image =["/storage/product/delicacies_jamon1.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
+   delicacies_jamon1.manufacturer = "Хамон Torre De Nuñez";
+   delicacies_jamon1.save();
 
-   let wineS = new product();
-   wineS.name = "Spumante Millesimato";
-   wineS.vendor = "Spumante";
-   wineS.slug = wineS.name + wineS.vendor; 
-   wineS.price = "300";
-   wineS.price_action = "189";
-   wineS.category = "wine";
-   wineS.subCategory = "sparkling";
-   wineS.dess = "0.75";
-   wineS.dessOne =  "Италия";
-   wineS.desstwo = "11%";
-   wineS.dessThree =  "Вино игристое";
-   wineS.dessFour = "каберне совиньйон";
-   wineS.characteristics = [
+let delicacies_jamon2 = new product();
+   delicacies_jamon2.name = "Хамон Iberico Cebo Jamondor";
+   delicacies_jamon2.vendor = "Хамон";
+   delicacies_jamon2.slug = delicacies_jamon2.name + delicacies_jamon2.vendor; 
+   delicacies_jamon2.price = "3997";
+   delicacies_jamon2.price_action = "3120";
+   delicacies_jamon2.category = "delicacies";
+   delicacies_jamon2.subCategory = "jamon";
+   delicacies_jamon2.dess = "Деликатесы";
+   delicacies_jamon2.dessOne =  "Хамон";
+   delicacies_jamon2.desstwo = "Испания";
+   delicacies_jamon2.dessThree =  "100 гр";
+   delicacies_jamon2.dessFour = "Свинина";
+   delicacies_jamon2.characteristics = [
+      {
+         name: "Вид: ",
+         meaning: "Хамон",
+      },
        {
-          name: "Страна, регион:",
-          meaning: "Италия",
+          name: "Тип мяса: ",
+          meaning: "Свинина",
        },
        {
-         name: "Вино:",
-         meaning: "белое экстра-сухое",
+         name: "Вес, кг: ",
+         meaning: "0.1",
       },
       {
-         name: "Сахар:",
-         meaning: "Сухое",
+         name: "Страна-производитель товара: ",
+         meaning: "Испания",
       },
       {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
+         name: "Срок хранения: ",
+         meaning: "24-28 месяцев",
       },
    ];
-   wineS.image =["/storage/product/wine2.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wineS.manufacturer = "Spumante";
-   wineS.save();
+   delicacies_jamon2.image =["/storage/product/delicacies_jamon2.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
+   delicacies_jamon2.manufacturer = "Хамон";
+   delicacies_jamon2.save();
 
-   let wineT = new product();
-   wineT.name = "Astoria Prosecco Spumante";
-   wineT.vendor = "Astoria";
-   wineT.slug = wineT.name + wineT.vendor; 
-   wineT.price = "400";
-   wineT.price_action = "199";
-   wineT.category = "wine";
-   wineT.subCategory = "sparkling";
-   wineT.dess = "0.75";
-   wineT.dessOne =  "Италия";
-   wineT.desstwo = "11%";
-   wineT.dessThree =  "Вино игристое";
-   wineT.dessFour = "каберне совиньйон";
-   wineT.characteristics = [
+let delicacies_jamon3 = new product();
+   delicacies_jamon3.name = "Иберико Бейота, ручная нарезка Jamondul";
+   delicacies_jamon3.vendor = "Хамон";
+   delicacies_jamon3.slug = delicacies_jamon3.name + delicacies_jamon3.vendor; 
+   delicacies_jamon3.price = "547";
+   delicacies_jamon3.price_action = "489";
+   delicacies_jamon3.category = "delicacies";
+   delicacies_jamon3.subCategory = "jamon";
+   delicacies_jamon3.dess = "Деликатесы";
+   delicacies_jamon3.dessOne =  "Хамон";
+   delicacies_jamon3.desstwo = "Испания";
+   delicacies_jamon3.dessThree =  "70 гр";
+   delicacies_jamon3.dessFour = "Свинина";
+   delicacies_jamon3.characteristics = [
+      {
+         name: "Вид: ",
+         meaning: "Хамон",
+      },
        {
-          name: "Страна, регион:",
-          meaning: "Италия",
+          name: "Тип мяса: ",
+          meaning: "Свинина",
        },
        {
-         name: "Вино:",
-         meaning: "Розовое экстра-сухое",
+         name: "Вес, кг: ",
+         meaning: "0.07",
       },
       {
-         name: "Сахар:",
-         meaning: "экстра-сухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
+         name: "Страна-производитель товара: ",
+         meaning: "Испания",
       },
    ];
-   wineT.image =["/storage/product/wine3.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wineT.manufacturer = "Astoria";
-   wineT.save();
+   delicacies_jamon3.image =["/storage/product/delicacies_jamon3.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
+   delicacies_jamon3.manufacturer = "Хамон";
+   delicacies_jamon3.save();
 
-   let wine4 = new product();
-   wine4.name = "Astoria Prosecco Spumante";
-   wine4.vendor = "Astoria";
-   wine4.slug = wine4.name + wine4.vendor; 
-   wine4.price = "300";
-   wine4.price_action = "189";
-   wine4.category = "wine";
-   wine4.subCategory = "sparkling";
-   wine4.dess = "0.75";
-   wine4.dessOne =  "Италия";
-   wine4.desstwo = "11%";
-   wine4.dessThree =  "Вино игристое";
-   wine4.dessFour = "каберне совиньйон";
-   wine4.characteristics = [
+let delicacies_jamon4 = new product();
+   delicacies_jamon4.name = "Pont Курадо мини в подарочной упаковке";
+   delicacies_jamon4.vendor = "Хамон Pont Курадо";
+   delicacies_jamon4.slug = delicacies_jamon4.name + delicacies_jamon4.vendor; 
+   delicacies_jamon4.price = "1053";
+   delicacies_jamon4.price_action = "769";
+   delicacies_jamon4.category = "delicacies";
+   delicacies_jamon4.subCategory = "jamon";
+   delicacies_jamon4.dess = "Деликатесы";
+   delicacies_jamon4.dessOne =  "Хамон";
+   delicacies_jamon4.desstwo = "Испания";
+   delicacies_jamon4.dessThree =  "1 кг";
+   delicacies_jamon4.dessFour = "Свинина";
+   delicacies_jamon4.characteristics = [
+      {
+         name: "Вид: ",
+         meaning: "Хамон",
+      },
        {
-          name: "Страна, регион:",
-          meaning: "Италия",
+          name: "Тип мяса: ",
+          meaning: "Свинина",
        },
        {
-         name: "Вино:",
-         meaning: "Розовое экстра-сухое",
+         name: "Вес, кг: ",
+         meaning: "1",
       },
       {
-         name: "Сахар:",
-         meaning: "экстра-сухое",
+         name: "Страна-производитель товара: ",
+         meaning: "Испания",
       },
       {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
+         name: "Срок хранения: ",
+         meaning: "270 дней",
       },
    ];
-   wine4.image =["/storage/product/wine4.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine4.manufacturer = "Astoria";
-   wine4.save();
+   delicacies_jamon4.image =["/storage/product/delicacies_jamon4.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
+   delicacies_jamon4.manufacturer = "Хамон Pont Курадо";
+   delicacies_jamon4.save();
 
-   let wine5 = new product();
-   wine5.name = "Heretat el Padruell Сava";
-   wine5.vendor = "Heretat";
-   wine5.slug = wine5.name + wine5.vendor; 
-   wine5.price = "300";
-   wine5.price_action = "189";
-   wine5.category = "wine";
-   wine5.subCategory = "sparkling";
-   wine5.dess = "0.75";
-   wine5.dessOne =  "Италия";
-   wine5.desstwo = "11%";
-   wine5.dessThree =  "Вино игристое";
-   wine5.dessFour = "каберне совиньйон";
-   wine5.characteristics = [
+let delicacies_jamon5 = new product();
+   delicacies_jamon5.name = "Палета Серрано Теруэль Gran Reserva";
+   delicacies_jamon5.vendor = "Хамон Палета Серрано";
+   delicacies_jamon5.slug = delicacies_jamon5.name + delicacies_jamon5.vendor; 
+   delicacies_jamon5.price = "2890";
+   delicacies_jamon5.price_action = "2340";
+   delicacies_jamon5.category = "delicacies";
+   delicacies_jamon5.subCategory = "jamon";
+   delicacies_jamon5.dess = "Деликатесы";
+   delicacies_jamon5.dessOne =  "Хамон";
+   delicacies_jamon5.desstwo = "Испания";
+   delicacies_jamon5.dessThree =  "5 кг";
+   delicacies_jamon5.dessFour = "Свинина";
+   delicacies_jamon5.characteristics = [
+      {
+         name: "Вид: ",
+         meaning: "Хамон",
+      },
        {
-          name: "Страна, регион:",
-          meaning: "Италия",
+          name: "Тип мяса: ",
+          meaning: "Свинина",
        },
        {
-         name: "Вино:",
-         meaning: "Белое брют",
+         name: "Вес, кг: ",
+         meaning: "5",
       },
       {
-         name: "Сахар:",
-         meaning: "Белое брют",
+         name: "Страна-производитель товара: ",
+         meaning: "Испания",
       },
       {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11.5%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
+         name: "Срок хранения: ",
+         meaning: "365 дней",
       },
    ];
-   wine5.image =["/storage/product/wine5.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine5.manufacturer = "Heretat";
-   wine5.save();
-
-   let wine6 = new product();
-   wine6.name = "Marlborough Sun Sauvignon Blanc";
-   wine6.vendor = "Marlborough";
-   wine6.slug = wine6.name + wine6.vendor; 
-   wine6.price = "350";
-   wine6.price_action = "339";
-   wine6.category = "wine";
-   wine6.subCategory = "white";
-   wine6.dess = "0.75";
-   wine6.dessOne =  "Италия";
-   wine6.desstwo = "13%";
-   wine6.dessThree =  "Вино";
-   wine6.dessFour = "каберне совиньйон";
-   wine6.characteristics = [
-       {
-          name: "Страна, регион:",
-          meaning: "Италия",
-       },
-       {
-         name: "Вино:",
-         meaning: "Белое сухое",
-      },
-      {
-         name: "Сахар:",
-         meaning: "Белое сухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "13%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
-      },
-   ];
-   wine6.image =["/storage/product/wine6.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine6.manufacturer = "Marlborough";
-   wine6.save();
-
-   let wine7 = new product();
-   wine7.name = "Martini Rose";
-   wine7.vendor = "Martini";
-   wine7.slug = wine7.name + wine7.vendor; 
-   wine7.price = "380";
-   wine7.price_action = "269";
-   wine7.category = "wine";
-   wine7.subCategory = "sparkling";
-   wine7.dess = "0.75";
-   wine7.dessOne =  "Италия";
-   wine7.desstwo = "9.5%";
-   wine7.dessThree =  "Вино";
-   wine7.dessFour = "каберне совиньйон";
-   wine7.characteristics = [
-       {
-          name: "Страна, регион:",
-          meaning: "Италия",
-       },
-       {
-         name: "Вино:",
-         meaning: "розовое полусухое",
-      },
-      {
-         name: "Сахар:",
-         meaning: "розовое полусухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "9.5%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
-      },
-   ];
-   wine7.image =["/storage/product/wine7.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine7.manufacturer = "Martini";
-   wine7.save();
-
-   let wine8 = new product();
-   wine8.name = "Capellana";
-   wine8.vendor = "Capellana";
-   wine8.slug = wine8.name + wine8.vendor; 
-   wine8.price = "300";
-   wine8.price_action = "229";
-   wine8.category = "wine";
-   wine8.subCategory = "red";
-   wine8.dess = "0.75";
-   wine8.dessOne =  "Италия";
-   wine8.desstwo = "13.5%";
-   wine8.dessThree =  "Вино";
-   wine8.dessFour = "каберне совиньйон";
-   wine8.characteristics = [
-       {
-          name: "Страна, регион:",
-          meaning: "Италия",
-       },
-       {
-         name: "Вино:",
-         meaning: "красное сухое",
-      },
-      {
-         name: "Сахар:",
-         meaning: "красное сухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "13.5%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
-      },
-   ];
-   wine8.image =["/storage/product/wine8.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine8.manufacturer = "Capellana";
-   wine8.save();
-
-   let wine9 = new product();
-   wine9.name = "Serenissima Prosecco Spumante Extra";
-   wine9.vendor = "Serenissima";
-   wine9.slug = wine9.name + wine9.vendor; 
-   wine9.price = "150";
-   wine9.price_action = "79";
-   wine9.category = "wine";
-   wine9.subCategory = "sparkling";
-   wine9.dess = "0.75";
-   wine9.dessOne =  "Италия";
-   wine9.desstwo = "11%";
-   wine9.dessThree =  "Вино";
-   wine9.dessFour = "каберне совиньйон";
-   wine9.characteristics = [
-       {
-          name: "Страна, регион:",
-          meaning: "Италия",
-       },
-       {
-         name: "Вино:",
-         meaning: "белое экстра-сухое",
-      },
-      {
-         name: "Сахар:",
-         meaning: "белое экстра-сухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.2", "0.75"],
-      },
-   ];
-   wine9.image =["/storage/product/wine9.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine9.manufacturer = "Serenissima";
-   wine9.save();
-
-   let wine10 = new product();
-   wine10.name = "Casa da Malta";
-   wine10.vendor = "Casa";
-   wine10.slug = wine10.name + wine10.vendor; 
-   wine10.price = "200";
-   wine10.price_action = "109";
-   wine10.category = "wine";
-   wine10.subCategory = "red";
-   wine10.dess = "0.75";
-   wine10.dessOne =  "Италия";
-   wine10.desstwo = "13.5%";
-   wine10.dessThree =  "Вино";
-   wine10.dessFour = "каберне совиньйон";
-   wine10.characteristics = [
-       {
-          name: "Страна, регион:",
-          meaning: "Италия",
-       },
-       {
-         name: "Вино:",
-         meaning: "красное сухое",
-      },
-      {
-         name: "Сахар:",
-         meaning: "красное сухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "13.5%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
-      },
-   ];
-   wine10.image =["/storage/product/wine10.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine10.manufacturer = "Casa";
-   wine10.save();
-
-   let wine11 = new product();
-   wine11.name = "Montecampo Prosecco";
-   wine11.vendor = "Montecampo";
-   wine11.slug = wine11.name + wine11.vendor; 
-   wine11.price = "300";
-   wine11.price_action = "220";
-   wine11.category = "wine";
-   wine11.subCategory = "white";
-   wine11.dess = "0.75";
-   wine11.dessOne =  "Италия";
-   wine11.desstwo = "11%";
-   wine11.dessThree =  "Вино";
-   wine11.dessFour = "каберне совиньйон";
-   wine11.characteristics = [
-       {
-          name: "Страна, регион:",
-          meaning: "Италия",
-       },
-       {
-         name: "Вино:",
-         meaning: "белое сухое",
-      },
-      {
-         name: "Сахар:",
-         meaning: "белое сухое",
-      },
-      {
-         name: "Виноград:",
-         meaning: "каберне совиньйон",
-      },
-      {
-         name: "Крепость:",
-         meaning: "11%",
-      },
-      {
-         name: "Объем:",
-         meaning: ["0.75", "1.5"],
-      },
-   ];
-   wine11.image =["/storage/product/wine11.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
-   wine11.manufacturer = "Montecampo";
-   wine11.save();
+   delicacies_jamon5.image =["/storage/product/delicacies_jamon5.png", "/storage/product/pole1.png", "/storage/product/pole2.png", "/storage/product/pole3.png"];
+   delicacies_jamon5.manufacturer = "Хамон Палета Серрано";
+   delicacies_jamon5.save();
    response.send("Ok");
 }
 
@@ -609,6 +324,110 @@ exports.getBySubCategory = function (request, response) {
 exports.getByRecommendedProducts = function (request, response) {
    console.log("recommended products");
    product.find({recommended: "recommended"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryWine = function (request, response) {
+   console.log("category");
+   product.find({category: "wine"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryWhiskey = function (request, response) {
+   console.log("category");
+   product.find({category: "whiskey"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryGiftBaskets = function (request, response) {
+   console.log("category");
+   product.find({category: "giftBaskets"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryGlass = function (request, response) {
+   console.log("category");
+   product.find({category: "glass"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryCandles = function (request, response) {
+   console.log("category");
+   product.find({category: "candles"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryJamon = function (request, response) {
+   console.log("subCategory");
+   product.find({subCategory: "jamon"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryCheese = function (request, response) {
+   console.log("subCategory");
+   product.find({subCategory: "cheese"},
+       function (err, allData ) {
+           if (err){
+               console.log(err);
+               response.json(err);
+               return;
+           }
+           response.json(allData);
+       }
+   );
+}
+exports.getBysubCategoryChocolate = function (request, response) {
+   console.log("chocolate");
+   product.find({subCategory: "chocolate"},
        function (err, allData ) {
            if (err){
                console.log(err);

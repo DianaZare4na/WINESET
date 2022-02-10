@@ -1,17 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import {FavoriteItem} from "./FavoriteItem";
 
 export function FavoriteAll ({products, removeFromFavorite}) {
 
-   const close = () => {
-      document.getElementById("BasketAll").style.display = "none";
-      document.querySelector(".modal-backdrop").style.display = "none";
-   }
-
 
    return (
-      <div className="modal fade" id="FavoriteAll" tabindex="-1" aria-labelledby="FavoriteAllLabel" aria-hidden="true">
+      <div className="modal fade" id="FavoriteAll"  tabIndex={-1} aria-labelledby="FavoriteAllLabel" aria-hidden="true">
       <div className="modal-dialog ">
       <div className="modal-content ">
          <div className="modal-header">
@@ -27,15 +21,10 @@ export function FavoriteAll ({products, removeFromFavorite}) {
                      {products.map((p) => <FavoriteItem key={p.id} product={p} removeFromFavorite={removeFromFavorite} />)}
                   </div>
                </div>
-               <div className="modal-footer modal-futer-div">
-                  <hr/>
-                  <div className="">
-                     <button type="button" className="btn btn-primary" onClick={close}><Link to="/checkout">Оформить заказ</Link></button>
-                  </div>
-               </div>
+              
                </>
             ) : (
-                  <p>Вы пока ничего не выбрали</p>
+                  <p className="p-fev-zer">Вы пока ничего не выбрали</p>
             )}
       </div>
       </div>

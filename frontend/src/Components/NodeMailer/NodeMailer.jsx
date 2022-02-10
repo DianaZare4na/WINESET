@@ -10,6 +10,7 @@ export default class NodeMailer extends Component {
 			error: null,
 			isLoaded: true,
          modal: false,
+         value: '',
 			mailer_body: {
 				mail: "",
             userName: "",
@@ -23,6 +24,7 @@ export default class NodeMailer extends Component {
 		const mailer_body = this.state.mailer_body;
 		mailer_body[el.target.name] = el.target.value;
 		this.setState({ mailer_body });
+      
 	}
 
 	send() {
@@ -50,15 +52,15 @@ export default class NodeMailer extends Component {
 	render() {
 		if (this.state.error) return this.renderError();
 		if (!this.state.isLoaded) return this.renderLoading();
-      if (this.state.modal) return this. renderModal();
+      if (this.state.modal) return this.renderModal();
 		return this.renderData();
 	}
 
 	renderData() {
 		return (
 			<>
-            <input type="text" name="userName" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Введите ваше имя..." maxlength="20" required/><br/>
-				<input type="email" name="mail" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Email" maxlength="50" required/><br/>
+            <input value={this.state.value} type="text" name="userName" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Введите ваше имя..." maxLength="20" required/><br/>
+				<input value={this.state.value} type="email" name="mail" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Email" maxLength="50" required/><br/>
 				<textarea type="text" name="message" className="page-checkout-textarea" onChange={this.onChange.bind(this)} placeholder="Введите ваше сообщение"></textarea><br/>
 				<div className="btn-node-mailer">
                <button type="button" className="btn  btn-node-mailer" onClick={this.send.bind(this)}>Отправить</button>

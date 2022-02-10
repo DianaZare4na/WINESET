@@ -22,7 +22,11 @@
    color: #fff;
    z-index: 10;
 }
-
+.p-fev-zer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 @media (max-width: 767.98px){
 	.col-favorite{
       padding-left: 11.5%;

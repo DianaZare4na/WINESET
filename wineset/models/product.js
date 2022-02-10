@@ -7,7 +7,8 @@ const Product = new Schema({
     name: String,
     slug: String, // Фрагмент строки для поисковой системы
     vendor: String,
-    image: Array,
+    image:  Array,
+    img: String,
     price: Number,
     price_action: Number,
     recommended: String,

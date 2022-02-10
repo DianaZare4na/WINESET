@@ -20,21 +20,10 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Reports',
-        path: '/reports/reports1',
+        title: 'Наборы',
+        path: '/gifts/Gift',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
-      },
-      {
-        title: 'Reports 2',
-        path: '/reports/reports2',
-        icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
-      },
-      {
-        title: 'Reports 3',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
       }
     ]
   },
@@ -47,13 +36,13 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Users',
-        path: '/overview/users',
+        title: 'Вино',
+        path: '/wineandalkohol/wine',
         icon: <IoIcons.IoIosPaper />
       },
       {
-        title: 'Revenue',
-        path: '/overview/revenue',
+        title: 'Виски',
+        path: '/wineandalkohol/whiskey',
         icon: <IoIcons.IoIosPaper />
       }
     ]
@@ -67,15 +56,20 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Message 1',
-        path: '/messages/message1',
+        title: 'Хомон',
+        path: '/delicacies/jamon',
         icon: <IoIcons.IoIosPaper />
       },
       {
-        title: 'Message 2',
-        path: '/messages/message2',
+        title: 'Сыр',
+        path: '/delicacies/cheese',
         icon: <IoIcons.IoIosPaper />
-      }
+      },
+      {
+         title: 'Шоколад',
+         path: '/delicacies/chocolate',
+         icon: <IoIcons.IoIosPaper />
+       }
     ]
   },
   {
@@ -87,13 +81,13 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Message 1',
-        path: '/messages/message1',
+        title: 'Свечи',
+        path: '/glassesandcandles/candle',
         icon: <IoIcons.IoIosPaper />
       },
       {
-        title: 'Message 2',
-        path: '/messages/message2',
+        title: 'Бокалы',
+        path: '/glassesandcandles/glass',
         icon: <IoIcons.IoIosPaper />
       }
     ]

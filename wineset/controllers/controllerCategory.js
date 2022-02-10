@@ -63,6 +63,38 @@ exports.seed = function (request, response) {
       nameEng: "Decorative" },
    ];
    candles.save();
+   let whiskey = new category();
+   whiskey.name = "Виски";
+   whiskey.nameEng = "whiskey";
+   whiskey.image = "/storage/category/whiske-set.png";
+   whiskey.subСategor = [
+      {name : "Дымный вкус",
+      nameEng: "Smoky" },
+      {name: "Пряный вкус",
+      nameEng: "Spicy" },
+      {name: "Сладкий вкус",
+      nameEng: "Sweet" },
+      {name: "Фруктовый вкус",
+      nameEng: "Fruit" },
+   ];
+   whiskey.save();
+
+let giftBaskets = new category();
+   giftBaskets.name = "Подарочные наборы";
+   giftBaskets.nameEng = "giftBaskets";
+   giftBaskets.image = "/storage/category/wine-sets.jpg";
+   giftBaskets.subСategor = [
+      {name : "Ром",
+      nameEng: "Rum" },
+      {name: "Виски",
+      nameEng: "whiskey_set" },
+      {name: "Коньяк и бренди",
+      nameEng: "Cognac_brandy" },
+      {name: "Шампанское и игристое вино",
+      nameEng: "Champagne_wine" },
+   ];
+   giftBaskets.save();
+
 
    response.send("Ok");
 }

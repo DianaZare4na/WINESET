@@ -86,8 +86,8 @@
    border-radius: 3px;
    font-size: 16px;
    font-family: "InterSamy";
-   padding: 2.2% 0 ;
-   width: 40%;
+   padding: 3% 0 ;
+   width:180px;
 }
 .foote-buttons-in-basket{
    border: 1px solid #7A0000 !important;
@@ -118,6 +118,7 @@
    }
    .foote-buttons button{
       font-size: 10px;
+      width: 120px;
    }
    .render-modal-basket-body{
       padding: 0;

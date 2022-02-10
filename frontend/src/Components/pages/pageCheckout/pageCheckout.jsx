@@ -17,9 +17,9 @@ function PageCheckout({product}){
       <>
          <section className="row">
             <div className="col-10 col-back-to-basket offset-1"><Link to="/basket" className="a-arr" data-toggle="modal" data-target="#BasketAll"><img src={ArrowRight}/>Вернуться в корзину</Link></div>
-            <h2 className="col-3 offset-1 main-h2 main-h2-checkout-page">персональные данные</h2>
+            <h2 className="col-5 offset-1 main-h2 main-h2-checkout-page">персональные данные</h2>
             <div className="col-12"></div>
-            <div className="col-4 offset-1">
+            <div className="col-10 offset-1 col-sm-10  offset-sm-1  col-md-4 offset-md-1 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
                <h4 className="page-checkout-h4">Получатель</h4>
                <form name="formP_1" id="formPageOne">
                <input type="text" placeholder="Имя..." pattern="[А-Яа-яЁё]{,50}" maxlength="20" required/>
@@ -53,7 +53,7 @@ function PageCheckout({product}){
                <hr/>
             </form>
             </div>
-            <div className="col-6 offset-1 col-page-checkuot-bg">
+            <div className="col-10 offset-1 col-page-checkuot-bg col-sm-10  offset-sm-1  col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">
                <div className="page-checkuot-bg">
                   <div className="page-checkuot-bg-div-edit">
                      <h3>Bаш заказ</h3>

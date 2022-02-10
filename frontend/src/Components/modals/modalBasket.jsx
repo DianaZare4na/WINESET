@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link } from 'react-router-dom';
 import './modalBasket.css';
 export default function ModalBasket({product}){
    const [active, setActive] = useState(true)
@@ -13,10 +14,10 @@ export default function ModalBasket({product}){
                   </button>
                </header>
                <div className="render-modal-basket-body">
-                  <p className="render-modal-basket-p">Товар<span>{product.name}</span><br/>успешно добавлен в список покупок</p>
+                  <p className="render-modal-basket-p">Товар <span>{product.name}</span><br/>успешно добавлен в список покупок</p>
                   <footer className="foote-buttons">
-                     <button className="foote-buttons-in-basket" type="button">В корзину</button>
-                     <button className="foote-buttons-in-checkout" type="button">оформить заказ</button>
+                  <Link to="/basket"><button className="foote-buttons-in-basket" type="button">В корзину</button></Link>
+                  <Link to="/checkout"><button className="foote-buttons-in-checkout" type="button">Оформить заказ</button></Link>
                   </footer>
                </div>
             </div>

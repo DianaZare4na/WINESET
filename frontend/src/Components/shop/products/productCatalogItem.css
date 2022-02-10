@@ -8,6 +8,12 @@
    height: 530px;
    position: relative;
 }
+.product-catalog-item-content a{
+   color: #121212;
+}
+.product-catalog-item-content a:hover{
+   text-decoration: none;
+}
 .product-catalog-item-bg-im{
    display: flex;
    justify-content: center;
@@ -19,6 +25,7 @@
    padding-top: 2%;
    padding-left: 7%;
    position: relative;
+   /*height: 300px;*/
 }
 .product-catalog-item-bg-im div img{
    width: 100%;

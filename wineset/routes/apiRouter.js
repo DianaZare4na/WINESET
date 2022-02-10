@@ -20,6 +20,16 @@ router.get('/api/product/category/:categoryName',cProduct.getByCategory);
 router.get('/api/product/subcategory/:subCategoryName',cProduct.getBySubCategory);
 router.get('/api/product/recommended',cProduct.getByRecommendedProducts);
 
+router.get('/api/product/wine',cProduct.getBysubCategoryWine);
+router.get('/api/product/whiskey',cProduct.getBysubCategoryWhiskey);
+router.get('/api/product/giftBaskets',cProduct.getBysubCategoryGiftBaskets);
+router.get('/api/product/glass',cProduct.getBysubCategoryGlass);
+router.get('/api/product/candles',cProduct.getBysubCategoryCandles);
+
+router.get('/api/product/jamon',cProduct.getBysubCategoryJamon);
+router.get('/api/product/cheese',cProduct.getBysubCategoryCheese);
+router.get('/api/product/chocolate',cProduct.getBysubCategoryChocolate);
+
 router.get('/api/category/seed',cCategory.seed)
 router.get('/api/category/getcategory',cCategory.getCategory); // Для получения доступных полей фильтра
 router.get('/api/category/getcategory/:name',cCategory.getCategoryByName);
