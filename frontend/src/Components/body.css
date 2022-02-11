@@ -71,13 +71,9 @@ textarea:focus{
 .modal-dialog {
    margin-top: 84px;
 }
-/*@media (max-width: 991.98px){
-	.modal-backdrop{
-      top: 124px;
-   }
-}
-@media (max-width: 575.98px){
-	.modal-backdrop{
-      top: 100px;
-   }
+/*.maxht{
+   max-height: 62%;
 }*/
+.mim {
+   width: 63%;
+}

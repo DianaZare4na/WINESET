@@ -55,10 +55,10 @@ export function ProductCard ({putToBasket}){
                <span className="sr-only">Загрузка...</span>
          </div>
    );
-   let img = product.image[0];
+   let img =product.image[0];
    let img1 =product.image[1];
    let img2 =product.image[2];
-   let img3 = product.image[3];
+   let img3 =product.image[3];
    return (
 		<div className="row row-product">
           {showAlert}
@@ -118,13 +118,13 @@ export function ProductCard ({putToBasket}){
                </div>
                <div className="div-betters">
                   <ul className="betters">
-                     <li>Преимущество 1</li>
-                     <li>Преимущество 2</li>
-                     <li>Преимущество 3</li>
+                     <li>{product.dess}</li>
+                     <li>{product.dessOne}</li>
+                     <li>{product.dessTwo}</li>
                   </ul>
                   <ul className="betters-2">
-                     <li>Преимущество 4</li>
-                     <li>Преимущество 5</li>
+                     <li>{product.dessThree}</li>
+                     <li>{product.dessFour}</li>
                   </ul>
                </div>
             </div>

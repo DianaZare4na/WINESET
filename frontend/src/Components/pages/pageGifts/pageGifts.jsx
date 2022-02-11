@@ -10,24 +10,12 @@ import gif1 from "./img/gif1.png";
 import gif2 from "./img/gif2.png";
 import gif3 from "./img/gif3.png";
 import fir from "./img/fir.png";
-//import { Favorite } from "../../shop/favorite/favorite";
-//import { FavoriteAll } from "../../shop/favorite/FavoriteAll";
-//import { BasketAll } from "../../shop/basket/BasketAll";
-//import { BasketWidget } from "../../shop/basket/BasketWidget";
 
 function PageGifts({products, putToBasket, putToFavorite}){
    
    
       return(
          <>
-            {/*<Favorite favorite={this.state.favorite}></Favorite>
-            <FavoriteAll products={this.state.favorite}
-                  removeFromFavorite={this.removeFromFavorite.bind(this)}
-            ></FavoriteAll>
-            <BasketWidget basket={this.state.basket}></BasketWidget>
-            <BasketAll products={this.state.basket}
-                  removeFromBasket={this.removeFromBasket.bind(this)}
-            ></BasketAll>*/}
             <article className="row no-gutters">
 				<section className="col-12">
 					<div className="reletiv-div-man">

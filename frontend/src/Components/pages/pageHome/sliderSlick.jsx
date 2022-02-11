@@ -8,6 +8,8 @@ import Slider from "react-slick";
 
 import sliderF from "./img/sliderF.png";
 import sliderS from "./img/sliderS.png";
+import sliderT from "./img/photo1.jpg";
+import sliderFo from "./img/photo_2.jpg";
 
 export default function SimpleSlider() {
 	const settings = {
@@ -58,15 +60,15 @@ export default function SimpleSlider() {
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<div className="div-img-slider"><img src={sliderF}/></div>
+				<div className="div-img-slider"><img src={sliderT}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>
-				<div className="div-img-slider"><img src={sliderS}/></div>
+				<div className="div-img-slider"><img src={sliderFo}/></div>
 				<h3>Корпоративныч клиентам</h3>
 			</div>
 			<div>
-				<div className="div-img-slider"><img src={sliderS}/></div>
+				<div className="div-img-slider"><img src={sliderF}/></div>
 				<h3>Свадебным агенствам</h3>
 			</div>
 			<div>

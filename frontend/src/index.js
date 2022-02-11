@@ -8,7 +8,7 @@ import Age from "../src/age/age";
 ReactDOM.render(
    
   <React.StrictMode>
-     {/*<Age/>*/}
+     <Age/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

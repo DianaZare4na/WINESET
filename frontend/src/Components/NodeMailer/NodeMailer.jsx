@@ -10,7 +10,7 @@ export default class NodeMailer extends Component {
 			error: null,
 			isLoaded: true,
          modal: false,
-         value: '',
+        
 			mailer_body: {
 				mail: "",
             userName: "",
@@ -28,6 +28,27 @@ export default class NodeMailer extends Component {
 	}
 
 	send() {
+      if (this.state.mailer_body.mail.length == 0) {
+			const mail = document.getElementById("email");
+			mail.style.border = "1px solid red";
+			mail.value = "Пожалуйста введите почту";
+			return;
+		  } 
+        if (this.state.mailer_body.mail.length > 2) {
+			const mail = document.getElementById("email");
+			mail.style.border = "1px solid green";
+		  } 
+		if(this.state.mailer_body.name == 0) {
+			const name = document.getElementById("name");
+			name.style.border = "1px solid red";
+			name.value = "Пожалуйста введите имя";
+			return;
+		 } 
+       if(this.state.mailer_body.name > 2) {
+			const name = document.getElementById("name");
+			name.style.border = "1px solid green";
+		 } 
+	  
 		this.setState({ isLoaded: false })
 		fetch("/api/sendmail/",
 			{
@@ -59,8 +80,8 @@ export default class NodeMailer extends Component {
 	renderData() {
 		return (
 			<>
-            <input value={this.state.value} type="text" name="userName" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Введите ваше имя..." maxLength="20" required/><br/>
-				<input value={this.state.value} type="email" name="mail" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Email" maxLength="50" required/><br/>
+            <input  type="text" id="name" name="userName" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Введите ваше имя..." maxLength="20" required/><br/>
+				<input  type="email" id="email" name="mail" className="node-mailer-input" onChange={this.onChange.bind(this)} placeholder="Email" maxLength="50" required/><br/>
 				<textarea type="text" name="message" className="page-checkout-textarea" onChange={this.onChange.bind(this)} placeholder="Введите ваше сообщение"></textarea><br/>
 				<div className="btn-node-mailer">
                <button type="button" className="btn  btn-node-mailer" onClick={this.send.bind(this)}>Отправить</button>

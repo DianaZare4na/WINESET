@@ -1,0 +1,37 @@
+.bg-error{
+   background-color: rgba(164, 164, 164, 0.15);
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.img-error-div img{
+   width: 100%;
+
+}
+.img-error-div{
+   flex-basis: 30%;
+}
+.bg-error h2{
+   font-family: "Cormorant";
+	font-size: 10vw;
+   
+}
+.text-error-div{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-basis: 35%;
+}
+.text-error-div h3{
+   text-align: center;
+   font-size: 2vw;
+   font-family: "InterSamy";
+   font-weight: 700;
+}
+.bg-error a{
+   color: #fff;
+}
+.bg-error a{
+   text-decoration: none;
+}

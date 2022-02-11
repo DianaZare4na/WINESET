@@ -15,7 +15,15 @@
    padding-left: 1%;
    color: #121212;
 }
-
+.modal-body-our-contact-h3 a{
+   color: #000;
+}
+.modal-body-our-contact-modal-footer a{
+   color: #fff;
+}
+.modal-body-our-contact-modal-footer a:hover{
+   text-decoration: none;
+}
 .modal-body-our-contact-social{
    background-color: rgba(164, 164, 164, 0.15);
    display: flex;

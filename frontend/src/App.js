@@ -3,6 +3,7 @@ import './Components/body.css';
 import './fonts/fonts.css';
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+import PageError from "./Components/pages/pageError";
 import { ProductCard } from "./Components/shop/product/ProductCard/ProductCard";
 import { Filter } from "./Components/shop/product/Filter/Filter";
 import Header from "./Components/header/Header";
@@ -111,9 +112,7 @@ class App extends Storage {
                   <Route path="/basket" element={<BasketBig 
                         products={this.state.basket}
                         removeFromBasket={this.removeFromBasket.bind(this)} />} />
-                  {/* <Routes>
-                     <PageError error={"404 not found"}></PageError>
-                  </Routes> */}
+                  <Route path="*" element={<PageError error={"404 not found"}></PageError>}/>
                </Routes>
                <Instagram></Instagram>
                <footer className="row bagfooter">

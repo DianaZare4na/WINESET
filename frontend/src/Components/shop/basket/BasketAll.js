@@ -31,11 +31,10 @@ export function BasketAll ({products, removeFromBasket}) {
                   <hr/>
                   <div className="div-all-price" id="divAllPrice">
                      <div className="prise-flex1">
-                        <h3>Итого</h3>
-                        <p>Важная и не очень информация по поводу доставки</p>
+                       
                      </div>
                      <div className="all-price">
-                        850грн.
+                        
                      </div>
                   </div>
                   <div className="basket-btn-div">
